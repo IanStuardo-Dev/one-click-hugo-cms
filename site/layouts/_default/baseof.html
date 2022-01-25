@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
+  <link rel="stylesheet" href="https://improvebot.krino.ai/e4d798d154509684de5b69af7cb4e31396263913e6b1b0f6a7e4f218007006ac">
   {{ partial "head" . }}
   <body class="sans-serif">
 
@@ -11,7 +12,11 @@
 
     {{ $script := .Site.Data.webpack.main }}
     {{ with $script.js }}
+    <div id="improve-bot">
+    </div>
       <script src="{{ relURL . }}"></script>
     {{ end }}
+    <script src="https://improvebot.krino.ai/3443af235491694bf07873b132cad41181c2718d5f4546df5f98d87c85f7379f/YiqOdtgMKJRVXjBgTuheLiJYv/" async></script>
+
   </body>
 </html>
