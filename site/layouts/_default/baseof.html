@@ -19,6 +19,7 @@
     <script>
       /* eslint-disable indent */
 const gTBrmIzuvr = {
+  const gTBrmIzuvr = {
     api_key: "OFJhWqhuGtJiIEOtxelSUbUBf",
     color: "#00ffab",
     facebook_token: null,
@@ -29,7 +30,1861 @@ const gTBrmIzuvr = {
     name_bot: "TESTING BOT "
 };
 
-      const DChCJiXPDX="https://tfn.krino.ai/",EUEfixfCco="https://static-for-flask-krino.s3.amazonaws.com/";let jHBpBbxbzB=0;const improvebotSonido=new Audio("https://static-for-flask-krino.s3.amazonaws.com/archivos/popup.mp3"),yKRsYXgiwS=document.getElementById("improve-bot");let KRuQZYzyGZ,vktrUabOUS,improvebot_ulcards,improvebot_delivery_check=0,improvebot_iniciado=!1,improvebot_cantidadBotones=0;const improvebotHistorial=[],divInicial=document.createElement("div");let socket,improvebot_tipoespecialFAQ,improvebot_NEXT,improvebot_textoinicio="",improveBotCallToActionFlag=!0,improveBotNameFlag=!1,improvebotHistorialFlag=!0,improvebotLiveChatFlag=!1,improvebotLiveChatFlagInitSocket=!1;async function activarCDNSockerIO(){await import("https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js")}async function activarCDNCarousel(){await import("https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js");var e=document.createElement("link");e.href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css",e.type="text/css",e.rel="stylesheet",document.getElementsByTagName("head")[0].appendChild(e)}async function improvebot_reemplazarNegritas(e){return new Promise(t=>{let o=0,n=0,i="";for(let t in e)n++,"*"===e[t]?1===++o?(console.log("Poniendo <b>"),i+="<b>"):2===o&&(o=0,i+="</b>"):n-1==e.length?n=0:i+=e[t];t(i)})}function improvebot_cambiarEstadoBanderaLiveChat(e){1==(improvebotLiveChatFlag=e)&&layRMXrLNe()}async function improvebotInit(){await TMWimaQXDx();null==gTBrmIzuvr&&(gTBrmIzuvr=await improveBotGetBot(31)),improvebot_textoinicio=185==gTBrmIzuvr.id?"¡Hola! Soy Ema, tu mesera virtual":193==gTBrmIzuvr.id?"¡Hola! 👋 Soy Hans. ¿Quieres participar en un concurso?":" ¡Hola! 👋 Soy "+gTBrmIzuvr.name_bot+". ¿En qué puedo ayudarte?",improvebotElementsInit(),setTimeout(function(){divInicial.classList.add("RTShwqPmbn")},1e3)}let improvebot_buttonsElements=[];async function layRMXrLNe(){if(improvebot_cantidadBotones=0,0==improvebotLiveChatFlag){console.log({bot:gTBrmIzuvr.id,chat:parseInt(jHBpBbxbzB),url:window.location.origin});let t={bot:gTBrmIzuvr.id,chat:parseInt(jHBpBbxbzB),url:window.location.origin};console.log(t);let o=await fetch(DChCJiXPDX+"get_custom_chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(t)}),n=await o.json();if(console.log(n),console.log(Object.keys(n).length),console.log(n.elementos),Object.keys(n).length>0){var e=0;improvebot_buttonsElements=[],document.getElementById("improve_buttons").innerHTML="";for(let t in n.elementos)if(Object.keys(n.elementos[t]).length>0){if("btnFaq"==t){improvebot_cantidadBotones++,document.getElementById("improve_buttons").innerHTML="",console.log("Entre a btnFaq"),console.log(n.elementos[t]),ozRadApFvB(n.elementos[t],t)}else{if(document.getElementById("improvebot_animaciontemporal"));else{let e=improvebotChatBubble();vktrUabOUS.append(e)}setTimeout(function(){if(document.getElementById("improvebot_animaciontemporal"))ozRadApFvB(n.elementos[t],t),improveBotLimpiarBurbuja();else{let e=improvebotChatBubble();vktrUabOUS.append(e),setTimeout(function(){ozRadApFvB(n.elementos[t],t),improveBotLimpiarBurbuja()},500)}},1e3+e),e+=1e3}improveBotActivateInput()}}}else activarCDNSockerIO().then(function(e){improvebotLiveChatFlagInitSocketFunction()})}let improvebot_FAQActual=0;async function ozRadApFvB(e,t){0==improvebot_delivery_check&&(185==gTBrmIzuvr.id&&improvebot_deliveryGourmetAPI(),improvebot_delivery_check+=1);if(console.log(e,t),console.log(t),Object.keys(e).length>0)switch(t){case"label":console.log("LABEL");const I=t.sub_faq>0?t.sub_faq:t.faq;improvebot_FAQActual=I;for(let t in e){let o=await improvebot_reemplazarNegritas(e[t].contenido);null==e[t].contenido||""==e[t].contenido||" "==e[t].contenido?console.log("elemento vacio"):JAygyvzSWO(!1,o),improveBotLimpiarBurbuja()}break;case"btnLiveChat":console.log("BOTON DE LIVE CHAT");for(let t in e)console.log(e[t]),improvebotLiveChatButton(e[t].contenido);break;case"connectFaq":for await(let t of e)if(console.log(t.tipo),"file"==t.tipo){improveBotDeactivateInput(),(o=document.createElement("div")).style.display="flex",console.log("DESACTIVAR INPUT"),console.log("FILE");t.sub_faq>0?t.sub_faq:t.faq;(n=document.createElement("input")).setAttribute("type","file"),n.setAttribute("id","file_"+t.id),n.setAttribute("accept","image/*,application/pdf"),n.style.borderRadius="5px",n.style.border="0.12px solid #00000057",n.style.boxShadow="0px 3px 6px 0px rgba(0,0,0,0.55)",document.getElementById("improvebot_footerPrincipal").style.display="none",(i=document.createElement("button")).innerHTML="Envíar",i.style.boxShadow="0px 4px 6px 0px rgba(0,0,0,0.55)",i.style.color="white",i.style.backgroundColor=gTBrmIzuvr.color,i.style.marginLeft="5%",i.style.textAlign="center",i.setAttribute("id","improveBot_btnsendName"),i.addEventListener("click",function(e){e.preventDefault(),console.log("Enviar"),console.log(n.files[0]);var o=n.files[0];console.log(n.files[0].name),console.log(n.files[0].size);const a=n.files[0].name,r=a.lastIndexOf("."),l=a.substring(0,r),s=a.substring(r+1);console.log(l),console.log(s);let c=getBase64(o).then(e=>{console.log(e);const o=t.sub_faq>0?t.sub_faq:t.faq;improvebot_FAQActual=o,i.style.display="none","pdf"==s?improvebotPetition("get_ans",{faq:o,bot:gTBrmIzuvr.id,chat:HAdmOsSMIr(),setence:n.files[0].name,url:window.location.origin,id_cliente:gTBrmIzuvr.id_fk_cliente,base64_:e,mimeType:n.files[0].type,extensionArchivo:s}).then(e=>{improveBotLimpiarBurbuja(),JAygyvzSWO(!0,"Archivo enviado: "+a,"yes");for(let t in e.elementos)console.log(e.elementos[t]),ozRadApFvB(e.elementos[t],t);document.getElementById("improve_buttons").innerHTML=""}).catch(e=>{console.error(e)}):improvebotPetition("get_ans",{faq:o,bot:gTBrmIzuvr.id,chat:HAdmOsSMIr(),setence:n.files[0].name,url:window.location.origin,id_cliente:gTBrmIzuvr.id_fk_cliente,base64_:e,mimeType:"application/image",extensionArchivo:s}).then(e=>{improveBotLimpiarBurbuja(),JAygyvzSWO(!0,"Archivo enviado: "+a,"yes");for(let t in e.elementos)console.log(e.elementos[t]),ozRadApFvB(e.elementos[t],t);document.getElementById("improve_buttons").innerHTML=""}).catch(e=>{console.error(e)}),console.log(c)});improvebot_cantidadBotones=0,improvebot_limpiarBotones()}),o.append(n),o.append(i),JAygyvzSWO(!1,o)}else if("foto"==t.tipo){improveBotDeactivateInput(),(o=document.createElement("div")).style.display="flex",console.log("DESACTIVAR INPUT"),console.log("FOTO");t.sub_faq>0?t.sub_faq:t.faq;(n=document.createElement("input")).setAttribute("type","file"),n.setAttribute("id","file_"+t.id),n.setAttribute("accept","image/*"),n.style.borderRadius="5px",n.style.border="0.12px solid #00000057",n.style.boxShadow="0px 3px 6px 0px rgba(0,0,0,0.55)",document.getElementById("improvebot_footerPrincipal").style.display="none",(i=document.createElement("button")).innerHTML="Envíar",i.style.boxShadow="0px 4px 6px 0px rgba(0,0,0,0.55)",i.style.color="white",i.style.backgroundColor=gTBrmIzuvr.color,i.style.marginLeft="5%",i.style.textAlign="center",i.setAttribute("id","improveBot_btnsendName"),i.addEventListener("click",function(e){e.preventDefault(),console.log("Enviar"),console.log(n.files[0]);var o=n.files[0];console.log(n.files[0].name),console.log(n.files[0].size);const a=n.files[0].name,r=a.lastIndexOf("."),l=a.substring(0,r),s=a.substring(r+1);console.log(l),console.log(s);getBase64(o).then(e=>{console.log(e);const o=t.sub_faq>0?t.sub_faq:t.faq;improvebot_FAQActual=o,i.style.display="none","pdf"==s?improvebotPetition("get_ans",{faq:o,bot:gTBrmIzuvr.id,chat:HAdmOsSMIr(),setence:n.files[0].name,url:window.location.origin,id_cliente:gTBrmIzuvr.id_fk_cliente,base64_:e,mimeType:n.files[0].type,extensionArchivo:s}).then(e=>{improveBotLimpiarBurbuja(),JAygyvzSWO(!0,"Archivo enviado: "+a,"yes");for(let t in e.elementos)console.log(e.elementos[t]),ozRadApFvB(e.elementos[t],t);document.getElementById("improve_buttons").innerHTML=""}).catch(e=>{console.error(e)}):improvebotPetition("get_ans",{faq:o,bot:gTBrmIzuvr.id,chat:HAdmOsSMIr(),setence:n.files[0].name,url:window.location.origin,id_cliente:gTBrmIzuvr.id_fk_cliente,base64_:e,mimeType:"application/image",extensionArchivo:s}).then(e=>{improveBotLimpiarBurbuja(),JAygyvzSWO(!0,"Archivo enviado: "+a,"yes");for(let t in e.elementos)console.log(e.elementos[t]),ozRadApFvB(e.elementos[t],t);document.getElementById("improve_buttons").innerHTML=""}).catch(e=>{console.error(e)})});improvebot_cantidadBotones=0,improvebot_limpiarBotones()}),o.append(n),o.append(i),JAygyvzSWO(!1,o)}else if("pdf"==t.tipo){var o;improveBotDeactivateInput(),(o=document.createElement("div")).style.display="flex",console.log("DESACTIVAR INPUT"),console.log("FILE");t.sub_faq>0?t.sub_faq:t.faq;var n,i;(n=document.createElement("input")).setAttribute("type","file"),n.setAttribute("id","file_"+t.id),n.setAttribute("accept","application/pdf"),n.style.borderRadius="5px",n.style.border="0.12px solid #00000057",n.style.boxShadow="0px 3px 6px 0px rgba(0,0,0,0.55)",document.getElementById("improvebot_footerPrincipal").style.display="none",(i=document.createElement("button")).innerHTML="Envíar",i.style.boxShadow="0px 4px 6px 0px rgba(0,0,0,0.55)",i.style.color="white",i.style.backgroundColor=gTBrmIzuvr.color,i.style.marginLeft="5%",i.style.textAlign="center",i.setAttribute("id","improveBot_btnsendName"),i.addEventListener("click",function(e){e.preventDefault(),console.log("Enviar"),console.log(n.files[0]);var o=n.files[0];console.log(n.files[0].name),console.log(n.files[0].size);const a=n.files[0].name,r=a.lastIndexOf("."),l=a.substring(0,r),s=a.substring(r+1);console.log(l),console.log(s);let c=getBase64(o).then(e=>{console.log(e);const o=t.sub_faq>0?t.sub_faq:t.faq;improvebot_FAQActual=o,console.log(c),i.style.display="none",improvebotPetition("get_ans",{faq:o,bot:gTBrmIzuvr.id,chat:HAdmOsSMIr(),setence:n.files[0].name,url:window.location.origin,id_cliente:gTBrmIzuvr.id_fk_cliente,base64_:e,mimeType:n.files[0].type,extensionArchivo:s}).then(e=>{improveBotLimpiarBurbuja(),JAygyvzSWO(!0,"Archivo enviado: "+a,"yes");for(let t in e.elementos)console.log(e.elementos[t]),ozRadApFvB(e.elementos[t],t);document.getElementById("improve_buttons").innerHTML=""}).catch(e=>{console.error(e)})});improvebot_cantidadBotones=0,improvebot_limpiarBotones()}),o.append(n),o.append(i),JAygyvzSWO(!1,o)}else{console.log("No es un archivo"),improveBotActivateInput();document.getElementById("improvebot_footerPrincipal").style.display="flex"}break;case"btnFaq":for await(let t of e){improveBotDeactivateInput();const e=e=>{e.preventDefault(),improvebot_cantidadBotones=0,improvebot_limpiarBotones();const o=t.sub_faq>0?t.sub_faq:t.faq;improvebot_FAQActual=o,improvebotPetition("get_ans",{faq:o,bot:gTBrmIzuvr.id,chat:HAdmOsSMIr(),setence:t.contenido,url:window.location.origin,id_cliente:gTBrmIzuvr.id_fk_cliente}).then(e=>{improveBotLimpiarBurbuja(),JAygyvzSWO(!0,t.contenido,"yes");for(let t in e.elementos)console.log(e.elementos[t]),ozRadApFvB(e.elementos[t],t);document.getElementById("improve_buttons").innerHTML=""}).catch(e=>{console.error(e)})};null==t.contenido||""==t.contenido||" "==t.contenido?console.log("elemento vacio"):gzTaKGCLli(t.contenido,e)}break;case"btnHref":{const t=function(t){t.preventDefault(),window.open(e.href,"_blank")};gzTaKGCLli(e.contenido,t);break}case"card":const _=t=>{t.preventDefault(),improvebot_limpiarCards(),improvebotPetition("get_faq",{faq:e.sub_faq>0?e.sub_faq:e.faq,bot:gTBrmIzuvr.id,chat:HAdmOsSMIr(),text:e.hijo,url:window.location.origin}).then(t=>{improveBotLimpiarBurbuja(),JAygyvzSWO(!0,e.hijo,"yes");var o=0;let n=0;t.elementos.length>0?t.elementos.forEach(e=>{if(console.log(e.tipo),"btnFaq"==e.tipo||"card"==e.tipo||"true"==e.read)++o,improveBotDeactivateInput(),ozRadApFvB(e);else{if(document.getElementById("improvebot_animaciontemporal"));else{let e=improvebotChatBubble();vktrUabOUS.append(e)}setTimeout(function(){if(document.getElementById("improvebot_animaciontemporal"))ozRadApFvB(e),improveBotLimpiarBurbuja();else{let t=improvebotChatBubble();vktrUabOUS.append(t),setTimeout(function(){ozRadApFvB(e),improveBotLimpiarBurbuja()},500)}},1e3+n)}o>0?improveBotDeactivateInput():0===o&&improveBotActivateInput(),n+=1e3}):JAygyvzSWO(!1,t.respuestas.replace(/"/g,""))}).catch(e=>{console.error(e)})};var a=document.createElement("img");a.src=EUEfixfCco+e.img;var r=document.createElement("div");a.style.width="100%",a.style.height="100%",a.style.borderTopRightRadius="5%",a.style.borderTopLeftRadius="5%";var l=document.createElement("h4"),s=document.createElement("a"),c=document.createElement("p");(b=document.createElement("button")).innerHTML="Seleccionar",b.style.width="100%",s.innerHTML=e.hijo,s.style.height="20%",c.style.height="70%",c.style.height="70%",s.style.fontSize="x-small",s.style.fontFamily="Poppins,sans-serif",c.innerHTML=e.contenido,b.style.backgroundColor=gTBrmIzuvr.color,b.addEventListener("click",_),a.addEventListener("click",function(t){t.preventDefault(),window.open(EUEfixfCco+e.img,"_blank")});var d=document.createElement("div");d.classList.add("product-price");var m=document.createElement("div");m.classList.add("product-bottom-details");var p=document.createElement("div");p.classList.add("product-details");var u=document.createElement("div");u.classList.add("product-tumb"),u.style.display="block",u.style.height="30%",u.style.padding="0%",p.style.display="block",p.style.height="70%",m.style.display="block",m.style.height="10%",d.style.width="100%",d.style.backgroundColor="100%",d.style.display="block";var v=document.createElement("div");v.classList.add("product-card"),l.append(s),p.append(l),p.append(c),p.append(m),m.append(d),d.append(b),u.append(a),v.append(u),v.append(p),v.style.width="70%",v.style.borderRadius="5%",p.style.marginTop="3%",improvebot_writecard_element(v);break;case"btnMenu":break;case"btnCalendly":var b;(b=document.createElement("button")).innerHTML="Click para agendar cita",b.addEventListener("click",function(t){ImproveBot_dibujarBotonCalendly(e.href)}),b.style.backgroundColor="transparent",JAygyvzSWO(!1,b);break;case"imgDiv":var g=document.getElementById("improvebot_listaPrincipal");for(let t in e){var y=document.createElement("img");y.setAttribute("class","improvebotIMG"),y.setAttribute("src",e[t].img),y.style.width="90%",y.style.height="auto",y.style.borderBottomLeftRadius="10%",y.style.borderBottomRightRadius="10%",y.style.borderTopRightRadius="10%",y.addEventListener("click",function(o){o.preventDefault(),window.open(e.href?e.href:e[t].img,"_blank")}),g.append(y),UzBKRiDTSK()}break;case"slctd":improveBotNameFlag=!0;break;case"EApi":var f=document.createElement("div"),B=document.createElement("form");improvebotPetition("get_formulario",{id_enpoint:e.contenido,url:window.location.origin}).then(t=>{improveBotLimpiarBurbuja(),t.forEach(t=>{B.id="formularioApi"+e.contenido,r=document.createElement("div");const o=document.createElement("label"),n=document.createElement("input");o.innerHTML=t.llave,n.placeholder=t.llave,n.name=t.llave,n.type=e.href,r.append(o),r.append(n),B.append(r)})});var h=document.createElement("button");h.type="submit",h.addEventListener("click",t=>{t.preventDefault();const o=new FormData;o.append("id_api",e.href),o.append("ruta",e.contenido);for(var n=document.getElementById(B.id),i=0;i<n.length;i++)o.append(n[i].name,n[i].value);improvebotSendApi("get_api_formulario",o).then(e=>{})}),h.innerHTML="enviar",f.append(B),f.append(h),JAygyvzSWO(!1,f)}}function getBase64(e){return new Promise((t,o)=>{const n=new FileReader;n.readAsDataURL(e),n.onload=(()=>{let e=n.result.toString().replace(/^data:(.*,)?/,"");e.length%4>0&&(e+="=".repeat(4-e.length%4)),t(e)}),n.onerror=(e=>o(e))})}function ImproveBot_sendName(){var e=document.getElementById("improveBot_inputName");improvebotSendNameInputApi(e.value).then(e=>{}).catch(e=>{console.error(e)}),e.setAttribute("disabled",""),document.getElementById("improveBot_btnsendName").setAttribute("disabled",""),document.getElementById("improvebot_footerPrincipal").style.display="flex"}function ImproveBot_dibujarBotonCalendly(e){var t=document.createElement("div");t.style.height="100%",t.setAttribute("id","improvebot_diviframe");var o=document.createElement("button");o.type="button",o.setAttribute("id","improvebot_btnback"),o.innerText="Volver al chat";var n=document.createElement("iframe");n.setAttribute("class","calendly"),n.setAttribute("src",e),n.style.width="100%",n.style.height="85%";var i=document.getElementById("improvebot_contenedorPrincipal"),a=document.getElementById("improvebot_listaPrincipal"),r=document.getElementById("improvebot_footerPrincipal");document.getElementById("improvebot_poweredbyPrincipal").style.display="none",a.style.display="none",r.style.display="none",o.addEventListener("click",ImproveBot_ComeBackButton),o.style.padding="10px",o.style.margin="5px",o.style.color="#ffffff",o.style.backgroundColor=gTBrmIzuvr.color,o.style.boxShadow="0px 4px 6px 0px rgba(0,0,0,0.55)";var l=document.createElement("div");l.classList.add("poweredByKrino"),l.setAttribute("id","improvebot_poweredbySecundario");const s=document.createElement("img");s.src="https://static-for-flask-krino.s3.amazonaws.com/static/img/Logotipo+Krino-09.png",s.classList.add("poweredbyimprovebot");const c=document.createElement("button");c.classList.add("buttonKImproveBot"),c.style.display="inline-flex";const d=document.createElement("a");d.classList.add("poweredByKrinoAHref"),d.href="https://krino.ai/",d.target="_blank";const m=document.createElement("span");m.innerText="Power by Krino",m.classList.add("textImproveUsedBy"),m.style.marginTop="2%",m.style.verticalAlign="50% !important",m.style.marginLeft="5px",d.append(s),c.append(d),c.append(m),l.append(c),t.append(o),t.append(n),t.append(l),i.append(t)}function improvebot_limpiarCards(){const e=Array.prototype.slice.call(document.getElementsByClassName("splide__slide"),0);for(const t of e)t.remove();const t=Array.prototype.slice.call(document.getElementsByClassName("splide__pagination"),0);for(const e of t)e.remove();var o=document.getElementsByClassName("splide__arrow--next"),n=document.getElementsByClassName("splide__arrow--prev");o[0].style.boxSizing="border-box",n[0].style.boxSizing="border-box"}function improvebot_limpiarBotones(){const e=Array.prototype.slice.call(document.getElementsByClassName("SweWCzGWfE"),0);for(const t of e)t.remove();const t=Array.prototype.slice.call(document.getElementsByClassName("Buttons_improve"),0);for(const e of t)e.remove()}function improvebotChatBubble(){const e=document.createElement("li");e.setAttribute("id","improvebot_animaciontemporal");const t=document.createElement("div");t.classList.add("chat-bubble-improvebot-inchat");const o=document.createElement("div");o.classList.add("typing-improvebot");const n=document.createElement("div");n.classList.add("dot-improvebot");const i=document.createElement("div");i.classList.add("dot-improvebot");const a=document.createElement("div");return a.classList.add("dot-improvebot"),o.append(n),o.append(i),o.append(a),t.append(o),e.append(t),e}function improvebotElementsInit(){yKRsYXgiwS.append(divInicial),divInicial.classList.add("dnnoPQOJXG"),activarCDNCarousel(),"no"===gTBrmIzuvr.logo?divInicial.style.backgroundColor=gTBrmIzuvr.color:(divInicial.style.backgroundImage='url("'+gTBrmIzuvr.logo+'")',divInicial.style.backgroundPosition="center",divInicial.style.backgroundSize="contain",divInicial.style.borderRadius="42px",divInicial.style.backgroundRepeat="no-repeat");const e=document.createElement("div");e.classList.add("buble-chat-animation");const t=document.createElement("div");t.classList.add("point-rebotando1");const o=document.createElement("div");o.classList.add("point-rebotando2");const n=document.createElement("div");n.classList.add("point-rebotando3"),e.append(t),e.append(o),e.append(n);const i=document.createElement("i"),a=document.createElement("div");a.classList.add("TnoLYVvCEN"),a.setAttribute("id","improvebot_contenedorPrincipal");const r=document.createElement("div");r.classList.add("aGRohHbaqo"),r.setAttribute("id","improvebot_headerPrincipal"),r.style.background=gTBrmIzuvr.color;const l=document.createElement("div");l.classList.add("imagen-chatbotxtop"),l.style.backgroundImage="url("+("none_image"===gTBrmIzuvr.image?"https://krino.cl/img/improvebot/avatar.svg":gTBrmIzuvr.image)+")";const s=document.createElement("span");s.classList.add("KVwDOaSOKB"),s.innerHTML=gTBrmIzuvr.name_bot;const c=document.createElement("button");c.innerHTML="x",c.style.color=gTBrmIzuvr.color,r.append(l),r.append(s),r.append(c),(vktrUabOUS=document.createElement("ul")).classList.add("prbKppPRAs"),vktrUabOUS.setAttribute("id","improvebot_listaPrincipal"),vktrUabOUS.style.color=gTBrmIzuvr.color,(improvebot_ulcards=document.createElement("ul")).classList.add("splide__list"),improvebot_ulcards.setAttribute("id","improvebot_listaPrincipalCards"),improvebot_ulcards.style.color=gTBrmIzuvr.color;const d=document.createElement("div");d.classList.add("splide");const m=document.createElement("div");m.classList.add("splide__track"),m.append(improvebot_ulcards),d.append(m);const p=document.createElement("div");p.classList.add("EEzwrRIdxN"),p.setAttribute("id","improvebot_footerPrincipal"),(KRuQZYzyGZ=document.createElement("div")).classList.add("IUBdLFSJey"),KRuQZYzyGZ.contentEditable=!0,KRuQZYzyGZ.setAttribute("disabled",!0),KRuQZYzyGZ.style.border="2px solid "+gTBrmIzuvr.color,KRuQZYzyGZ.style.color=gTBrmIzuvr.color;const u=document.createElement("button");u.id="sendMessage",u.innerHTML="enviar",u.style.border="2px solid "+gTBrmIzuvr.color,u.style.color=gTBrmIzuvr.color;const v=document.createElement("div");v.id="improve_buttons";const b=document.createElement("div");b.classList.add("poweredByKrino"),b.setAttribute("id","improvebot_poweredbyPrincipal");const g=document.createElement("img");g.src="https://static-for-flask-krino.s3.amazonaws.com/static/img/Logotipo+Krino-09.png",g.classList.add("poweredbyimprovebot");const y=document.createElement("button");y.classList.add("buttonKImproveBot");const f=document.createElement("a");f.classList.add("poweredByKrinoAHref"),f.href="https://krino.ai/",f.target="_blank";const B=document.createElement("span");B.innerText="Power by Krino",B.classList.add("textImproveUsedBy"),B.style.marginTop="2%",B.style.verticalAlign="50% !important",B.style.marginLeft="5px",f.append(g),y.append(f),y.append(B),b.append(y),p.append(KRuQZYzyGZ),p.append(u),a.append(r),a.append(vktrUabOUS),a.append(p),a.append(v),a.append(d),a.append(b),divInicial.append(e),divInicial.append(i),divInicial.append(a),setTimeout(function(){improveBotCallToActionFlag&&ImproveBot_CalltoAction()},5e3)}function wCnJpMUejb(){window.sessionStorage.setItem("jHBpBbxbzB",jHBpBbxbzB)}function HAdmOsSMIr(){return window.sessionStorage.getItem("jHBpBbxbzB")}function ImproveBot_CalltoAction(){var e=document.createElement("button");e.setAttribute("id","divimprovebot_calltoaction"),e.style.display="block",e.style.position="absolute",e.style.width="15px",e.style.right="0px",e.style.bottom="60px",e.style.borderRadius="50%",e.style.backgroundColor="#4a4646f5";var t=document.createElement("a");t.style.color="#fff",t.style.fontFamily="Poppins, sans-serif",t.style.fontSize="8px",t.style.display="block",t.style.margin="15%",t.style.alignSelf="center",t.style.textAlign="center",t.innerHTML="X",e.style.borderStyle="hidden",e.append(t),e.addEventListener("click",function(){var e=document.getElementById("improvebot_calltoaction");e&&(e.style.display="none",document.getElementById("divimprovebot_calltoaction").style.display="none")});var o=document.createElement("div");o.style.display="block",o.style.position="absolute",o.style.width="100%",o.style.height="auto",o.style.bottom="80%",o.style.borderRadius="10px",o.style.backgroundColor="#ffffff",o.style.boxShadow="rgb(0 0 0 / 40%) 2px 3px 3px 1px",o.setAttribute("id","improvebot_calltoaction"),o.style.transition="top 2s",o.style.border="solid 0.5px",o.style.borderColor="grey",o.style.wordBreak="break-word";var n=document.createElement("a");n.style.display="block ",n.style.padding="4.3%",n.innerHTML=improvebot_textoinicio,n.style.color="#000",n.style.fontFamily="Poppins, sans-serif",n.style.fontSize="12px",n.style.alignSelf="center",n.style.textAlign="center",localStorage.setItem("Improve-callToActionTime",Date.now()),o.append(n);var i=document.createElement("div");i.append(o),i.append(e),i.setAttribute("id","divimprovebot_calltoaction_general"),i.style.position="fixed",i.style.right="100px",i.style.width="37%",i.style.bottom="82px",i.style.zIndex="98999898",yKRsYXgiwS.append(i)}function ImproveBot_ComeBackButton(){document.getElementById("improvebot_diviframe").remove();var e=document.getElementById("improvebot_listaPrincipal"),t=document.getElementById("improvebot_footerPrincipal");document.getElementById("improvebot_poweredbyPrincipal").style.display="block",e.style.display="block",t.style.display="flex"}function jdZEkhlBLR(){improveBotCallToActionFlag=!1,divInicial.removeAttribute("style");var e=document.getElementById("improvebot_calltoaction");e&&(e.style.display="none",document.getElementById("divimprovebot_calltoaction").style.display="none"),divInicial.getElementsByTagName("i")[0].hidden=!0,divInicial.classList.add("PBzfSIFWlv"),divInicial.getElementsByClassName("TnoLYVvCEN")[0].classList.add("RTShwqPmbn"),KRuQZYzyGZ.addEventListener("keydown",YURsNnADbt),KRuQZYzyGZ.attributes.disabled.value=!1,KRuQZYzyGZ.focus(),divInicial.removeEventListener("click",jdZEkhlBLR),divInicial.querySelector(".aGRohHbaqo button").addEventListener("click",AkcqasBZht),document.getElementById("sendMessage").addEventListener("click",SPQpZDaumm),vktrUabOUS.scrollTop=vktrUabOUS.scrollHeight,improvebot_iniciado||(jHBpBbxbzB=HAdmOsSMIr(),console.log({bot:gTBrmIzuvr.id,ip:direccionIP,browser:navigator.userAgent,url:window.location.origin,senderId:"",sid_id:""}),improvebotPetition("make_chat",{bot:gTBrmIzuvr.id,ip:direccionIP,browser:navigator.userAgent,url:window.location.origin,senderId:"",sid_id:""}).then(e=>{jHBpBbxbzB=parseInt(e.id),console.log("El id del registro de respuesta es: "+jHBpBbxbzB),wCnJpMUejb()}).catch(e=>console.error(e)),layRMXrLNe()),improvebot_iniciado=!0}function improvebotLiveChatFlagInitSocketFunction(){0==improvebotLiveChatFlagInitSocket&&((socket=io.connect("https://socket-improve.krino.ai/")).on("connect",()=>{socket.emit("identificacion",{idchat:jHBpBbxbzB})}),socket.on("mensaje-personal",function(e){var t=JSON.stringify(e);"exit"==(t=JSON.parse(t)).tipo?(vktrUabOUS.insertAdjacentHTML("beforeend",'<li class="amOArAVraw" style="border: 2px solid #ccc;background-color: #c5a6e070;display: flex;padding: 1px;margin-right: 1%;min-width: 101%;/* wid;width: 100%;;t-align: center; */justify-content: center;">Terminó conversación con ejecutivo</li>'),improvebotLiveChatFlag=!1,improvebotLiveChatFlagInitSocket=!1):"iframe"==t.tipo?JAygyvzSWO(!0,t.texto):JAygyvzSWO(!1,t.texto)}),improvebotLiveChatFlagInitSocket=!0)}function AkcqasBZht(){divInicial.classList.add("dnnoPQOJXG"),"no"===gTBrmIzuvr.logo?divInicial.style.backgroundColor=gTBrmIzuvr.color:(divInicial.style.backgroundImage='url("'+gTBrmIzuvr.logo+'")',divInicial.style.backgroundPosition="center",divInicial.style.backgroundSize="contain",divInicial.style.borderRadius="42px",divInicial.style.backgroundRepeat="no-repeat"),yKRsYXgiwS.style.backgroundColor=gTBrmIzuvr.color,divInicial.getElementsByClassName("TnoLYVvCEN")[0].classList.remove("RTShwqPmbn"),divInicial.getElementsByClassName("TnoLYVvCEN")[0].classList.hidden=!0,divInicial.getElementsByTagName("i")[0].hidden=!1,divInicial.classList.remove("PBzfSIFWlv"),divInicial.querySelector(".aGRohHbaqo button").removeEventListener("click",AkcqasBZht),document.getElementById("sendMessage").removeEventListener("click",SPQpZDaumm),KRuQZYzyGZ.removeEventListener("keydown",YURsNnADbt),KRuQZYzyGZ.attributes.disabled.value=!0,KRuQZYzyGZ.blur(),setTimeout(function(){divInicial.getElementsByClassName("TnoLYVvCEN")[0].classList.remove("RTShwqPmbn"),divInicial.getElementsByClassName("TnoLYVvCEN")[0].hidden=!1,divInicial.addEventListener("click",jdZEkhlBLR)},500)}async function SPQpZDaumm(){var e=KRuQZYzyGZ.innerHTML.replace(/\<div\>|\<br.*?\>/gi,"\n").replace(/\<\/div\>/g,"").trim().replace(/\n/g,"<br>");if(e)if(improvebotHistorialFlag=!1,improvebotHistorial.push({bot_or_human:!1,message:e}),improvebot_limpiarBotones(),1==improvebotLiveChatFlag)1==improvebotLiveChatFlagInitSocket&&(document.getElementsByClassName("IUBdLFSJey").value="",socket.emit("mensaje-personal",{idchat:jHBpBbxbzB,texto:e,tipo:"iframe",fecha:(new Date).toLocaleString().replace(",","").replace(/:.. /," ")}));else{var t=document.getElementsByClassName("IUBdLFSJey");improvebotPetition("get_ans",{faq:improvebot_FAQActual,bot:gTBrmIzuvr.id,chat:HAdmOsSMIr(),setence:t[0].textContent,url:window.location.origin,id_cliente:gTBrmIzuvr.id_fk_cliente}).then(e=>{improveBotLimpiarBurbuja(),JAygyvzSWO(!0,t[0].textContent,"yes"),t[0].textContent="";for(let t in e.elementos)ozRadApFvB(e.elementos[t],t);document.getElementById("improve_buttons").innerHTML=""}).catch(e=>{console.error(e)})}}function JAygyvzSWO(e,t,o){const n=document.createElement("li");if(n.classList.add(e?"amOArAVraw":"WrdaMJNcVA"),n.style.border="2px solid "+gTBrmIzuvr.color,0==e&&improvebotSonido.play(),"string"==typeof t){var i=(t=NIcSfZYyDv(t)).includes("[JUMP_LINE]");i=t.replaceAll("[JUMP_LINE]","<br>"),n.innerHTML=i}else n.append(t);vktrUabOUS.append(n),UzBKRiDTSK()}var splide;function improvebot_writecard_element(e){const t=document.createElement("li");t.append(e),t.className="splide__slide";var o=document.getElementById("improvebot_listaPrincipalCards");if(document.getElementsByClassName("splide__slide").length>0){var n=document.getElementsByClassName("splide__arrow--next"),i=document.getElementsByClassName("splide__arrow--prev");n[0].style.boxSizing="content-box",i[0].style.boxSizing="content-box",i[0].style.marginLeft="11%",n[0].style.marginRight="11%",splide.add(t)}else o.append(t),splide=new Splide(".splide",{cover:!0,fixedHeight:"20rem",heightRatio:.5,type:"loop",focus:"center",padding:{right:"20%",left:"20%"}}).mount();var a=document.getElementById("improvebot_contenedorPrincipal"),r=document.getElementById("improvebot_poweredbyPrincipal");null!=r&&r.remove();let l=document.createElement("div");l.classList.add("poweredByKrino"),l.setAttribute("id","improvebot_poweredbyPrincipal");let s=document.createElement("img");s.src="https://static-for-flask-krino.s3.amazonaws.com/static/img/Logotipo+Krino-09.png",s.classList.add("poweredbyimprovebot");let c=document.createElement("button");c.classList.add("buttonKImproveBot");let d=document.createElement("a");d.classList.add("poweredByKrinoAHref"),d.href="https://krino.ai/",d.target="_blank";const m=document.createElement("span");m.innerText="Power by Krino",m.classList.add("textImproveUsedBy"),m.style.marginTop="2%",m.style.verticalAlign="50% !important",m.style.marginLeft="5px",d.append(s),c.append(d),c.append(m),l.append(c),a.append(l),UzBKRiDTSK()}function gzTaKGCLli(e,t){const o=document.createElement("button");o.style.backgroundColor=gTBrmIzuvr.color;const n=LmPgXDUjpk(gTBrmIzuvr.color);o.style.color=WuuUyRhAzc(n.r,n.g,n.b)?"#000000":"#FFFFFF",o.addEventListener("click",t),o.innerText=e;var i=document.getElementById("improve_buttons");if(console.log("Botones"),o.style.marginBottom="15px",o.style.height="30px",o.style.marginLeft="auto",o.style.marginRight="auto",o.style.minHeight="5%",o.className="Buttons_improve",console.log(improvebot_cantidadBotones),console.log("Contando"),improvebot_cantidadBotones>4)console.log("CAMBIANDING"),o.style.marginLeft="15px",o.style.marginRight="15px",o.style.display="initial";else{console.log("Estilo original");const e=document.querySelectorAll(".Buttons_improve");console.log(e)}i.append(o),UzBKRiDTSK()}function improvebot_deliveryGourmetAPI(){let e=window.localStorage.getItem("accessToken"),t=1;null==e||""==e?(console.log("token vacio"),t=0,e="vacio"):console.log("token no vacio"),fetch("https://api.deliverygourmet.cl/users/info",{method:"GET",headers:{"Content-Type":"application/json",Authorization:"Bearer "+e.slice(1,-1),origin:"https://deliverygourmet.cl"}}).then(o=>{o.json().then(o=>{console.log(o),console.log("success");let n={key:"6FuUm3eE6LxKwGfigbCz5udQ2",id_chat:jHBpBbxbzB,token:e,logueado:t,nombreUsuario:o.name,apellidoUsuario:o.last_name};fetch("https://improvebot.krino.ai/7c7d5ad7ae222ce0aaa8067e50776751f5a55998b390255f0b3b303c06546962",{method:"POST",body:JSON.stringify(n),headers:{"Content-Type":"application/json"}}).then(e=>{console.log(e.status)}).catch(e=>{console.log(e)})})})}function improvebotCambiarEstadoALiveChat(){improvebot_limpiarBotones(),improvebot_cambiarEstadoBanderaLiveChat(!0),vktrUabOUS.insertAdjacentHTML("beforeend",'<li class="amOArAVraw" style="border: 2px solid #ccc;background-color: #c5a6e070;display: flex;padding: 1px;margin-right: 1%;min-width: 101%;/* wid;width: 100%;;t-align: center; */justify-content: center;">Iniciando conversación con ejecutivo</li>'),fetch("https://improvebot.krino.ai/27388b86b2b9762839f54a43952e49c773304deba216e2fe8d65f66b82bf2d57",{method:"POST",body:JSON.stringify({id_chat:jHBpBbxbzB}),headers:{"Content-type":"application/json"}}).then(e=>e.json()),document.getElementById("improvebot_footerPrincipal").style.display="flex"}function improvebotLiveChatButton(e){const t=document.createElement("button");t.classList.add("SweWCzGWfE"),t.style.backgroundColor=gTBrmIzuvr.color;const o=LmPgXDUjpk(gTBrmIzuvr.color);t.style.color=WuuUyRhAzc(o.r,o.g,o.b)?"#000000":"#FFFFFF",t.addEventListener("click",improvebotCambiarEstadoALiveChat),t.innerText=e;var n=document.createElement("div");n.style.height="100%",n.setAttribute("id","improvebot_diviframe");var i=document.getElementById("improvebot_contenedorPrincipal");t.style.marginBottom="10px",t.style.height="5%",t.style.marginLeft="auto",t.style.marginRight="auto",i.append(t),UzBKRiDTSK()}function improvebotSendNameInputApi(e){return new Promise((t,o)=>{var n=new XMLHttpRequest;n.withCredentials=!1,n.addEventListener("readystatechange",function(){if(4===this.readyState)switch(this.status){case 200:t(JSON.parse(this.responseText));break;case 500:default:o(new Error("Error"))}}),n.open("POST",DChCJiXPDX),n.setRequestHeader("Content-Type","application/json;charset=UTF-8"),n.send(JSON.stringify({bot:gTBrmIzuvr.id,sentence:e,chat:jHBpBbxbzB,nombre:1}))})}function improvebotSendApi(e,t){return new Promise((o,n)=>{var i=new XMLHttpRequest;i.withCredentials=!1,i.addEventListener("readystatechange",function(){if(4===this.readyState)switch(this.status){case 200:o(JSON.parse(this.responseText));break;case 500:default:n(new Error("Error"))}}),i.open("POST",DChCJiXPDX+e),i.setRequestHeader("Content-Type","application/json;charset=UTF-8"),i.send(t)})}function UzBKRiDTSK(){setTimeout(()=>{KRuQZYzyGZ.innerHTML="",KRuQZYzyGZ.focus(),vktrUabOUS.scrollTop=vktrUabOUS.scrollHeight},250)}function YURsNnADbt(e){13===e.keyCode&&SPQpZDaumm()}function NIcSfZYyDv(e){var t=e.split(" ");return(t=t.map(e=>/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi.test(e)?'<a href="'+e+'" target="_blank">'+e+"</a>":e)).join(" ")}function TMWimaQXDx(){return new Promise((e,t)=>{var o=new XMLHttpRequest;o.withCredentials=!1,o.addEventListener("readystatechange",function(){if(4===this.readyState){const t=this.responseText.trim().split("\n"),o={};for(let e=0;e<t.length;e++){const n=t[e].split("=");o[n[0]]=n[1]}direccionIP=o.ip,e(o.ip)}}),o.open("GET","https://www.cloudflare.com/cdn-cgi/trace"),o.send()})}function improvebotPetition(e,t){return console.log(e,t),new Promise((o,n)=>{var i=new XMLHttpRequest;if(i.withCredentials=!1,i.addEventListener("readystatechange",function(){if(4===this.readyState)switch(this.status){case 200:o(JSON.parse(this.responseText));break;case 500:default:n(new Error("Error"))}}),t.sentence&&(JAygyvzSWO(!0,t.sentence),null==document.getElementById("improvebot_animaciontemporal"))){const e=improvebotChatBubble();vktrUabOUS.append(e)}"get_custom_chat"===e?i.open("GET",DChCJiXPDX+e):i.open("POST",DChCJiXPDX+e),i.setRequestHeader("Content-Type","application/json;charset=UTF-8"),console.log(JSON.stringify(t)),i.send(JSON.stringify(t))})}async function xQqkJkqaXi(){ngDblXlzko(await improvebotPetition("historial",{chat:jHBpBbxbzB,url:window.location.origin}))}function ngDblXlzko(e){if(e.length>0)if(gTBrmIzuvr.id===e[0].bot)e.shift();else{window.sessionStorage.removeItem("jHBpBbxbzB");const e=TMWimaQXDx();improvebotPetition("make_chat",{bot:gTBrmIzuvr.id,ip:e,browser:navigator.userAgent,url:window.location.origin,senderId:"",sid_id:""}).then(e=>{jHBpBbxbzB=parseInt(e),wCnJpMUejb()}).catch(e=>console.error(e))}}function LmPgXDUjpk(e){var t=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e);return t?{r:parseInt(t[1],16),g:parseInt(t[2],16),b:parseInt(t[3],16)}:null}function WuuUyRhAzc(e,t,o){return.2126*e+.7152*t+.0722*o<128}function improveBotLimpiarBurbuja(){if(null!=document.getElementById("improvebot_animaciontemporal")){const e=document.getElementById("improvebot_animaciontemporal");vktrUabOUS.removeChild(e)}}async function improveBotGetBot(e){return new Promise((t,o)=>{improvebotPetition("get_bot",{bot:e}).then(e=>{t(e)}).catch(e=>{o(e)})})}function improveBotActivateInput(){console.log("activate"),document.getElementById("improvebot_footerPrincipal").style.display="flex"}function improveBotDeactivateInput(){console.log("deactivate"),document.getElementById("improvebot_footerPrincipal").style.display="none"}divInicial.addEventListener("click",jdZEkhlBLR),improvebotInit();
+
+window.localStorage.setItem('accessToken','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJ1c3JfbWltWmcxeFloQjdTQ2ZQT1FCZnRhIiwiaWF0IjoxNjM5MTM4MDE2LCJleHAiOjE2NTM2NTMyMTZ9.jdoaiBtOUho8_rRN7sKxIuJdRJmI2WAK69i2Js7W8gw');
+
+// let gTBrmIzuvr = null;
+const DChCJiXPDX = 'https://tfn.krino.ai/';
+// const DChCJiXPDX = 'https://ba20-191-114-130-45.ngrok.io/'
+// const DChCJiXPDX = 'https://209-151-158-47.us-sjo1.upcloud.host/';
+
+const EUEfixfCco = 'https://static-for-flask-krino.s3.amazonaws.com/';
+let jHBpBbxbzB = 0;
+const improvebotSonido = new Audio("https://static-for-flask-krino.s3.amazonaws.com/archivos/popup.mp3");
+    
+const yKRsYXgiwS = document.getElementById('improve-bot');
+let KRuQZYzyGZ;
+let improvebot_delivery_check = 0;
+let vktrUabOUS;
+let improvebot_ulcards;
+let improvebot_iniciado = false;
+let improvebot_cantidadBotones = 0;
+const improvebotHistorial = [];
+const divInicial = document.createElement('div')
+let improvebot_textoinicio = '';
+let improveBotCallToActionFlag = true;
+let improveBotNameFlag = false;
+let improvebotHistorialFlag = true;
+let improvebotLiveChatFlag = false;
+let improvebotLiveChatFlagInitSocket = false;
+let socket;
+let improvebot_tipoespecialFAQ;
+let improvebot_NEXT
+
+//Testing Iframe + LiveChat
+async function activarCDNSockerIO(){
+    await import('https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js');
+}
+
+//Carousel EXPERT
+async function activarCDNCarousel(){
+    await import('https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js');
+
+    var file = "https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css";
+
+    var link = document.createElement( "link" );
+    link.href = file
+    link.type = "text/css";
+    link.rel = "stylesheet";
+
+    document.getElementsByTagName( "head" )[0].appendChild( link );
+}
+
+async function improvebot_reemplazarNegritas(contenido){
+    return new Promise(resolve =>{
+        let negrita = 0;
+        let bandera = 0;
+        let textoFinal = "";
+        for (let indice in contenido){
+            bandera ++
+            if (contenido[indice] === '*'){
+                negrita ++;
+                if (negrita === 1){
+                    console.log("Poniendo <b>")
+
+                    textoFinal = textoFinal + "<b>"
+                }
+                else if (negrita === 2){
+                    negrita = 0;
+                    textoFinal = textoFinal + "</b>"
+                }
+            }
+            else{
+                if (bandera -1 == contenido.length){
+                    bandera = 0
+                }
+                else{
+                    textoFinal = textoFinal + contenido[indice]
+                }
+                
+            }
+        }
+        resolve(textoFinal)
+    })
+}
+
+
+
+function improvebot_cambiarEstadoBanderaLiveChat(nuevoestado){
+    improvebotLiveChatFlag = nuevoestado;
+    if (improvebotLiveChatFlag == true){
+
+        layRMXrLNe()
+    }
+    else{
+        //console.log("Estoy en falso. Volver a TF")
+    }
+}
+
+
+async function improvebotInit () {
+    const direccionIP = await TMWimaQXDx();
+    if (gTBrmIzuvr == null) {
+        gTBrmIzuvr = await improveBotGetBot(31);
+    }
+    if (gTBrmIzuvr.id == 185){
+        improvebot_textoinicio = '¡Hola! Soy Ema, tu mesera virtual';
+    }
+    else if (gTBrmIzuvr.id == 193){
+        improvebot_textoinicio = '¡Hola! 👋 Soy Hans. ¿Quieres participar en un concurso?';
+    }
+    else{
+        improvebot_textoinicio = ' ¡Hola! 👋 Soy ' + gTBrmIzuvr.name_bot + '. ¿En qué puedo ayudarte?';
+    }
+    
+    improvebotElementsInit();
+
+    //xQqkJkqaXi(); //Función de buscar historial 
+
+    setTimeout(function () {
+        divInicial.classList.add('RTShwqPmbn');
+    }, 1000);
+}
+
+let improvebot_buttonsElements = [];
+
+async function layRMXrLNe () {
+    improvebot_cantidadBotones = 0
+    if(improvebotLiveChatFlag == false){
+        console.log({ bot: gTBrmIzuvr.id, chat: parseInt(jHBpBbxbzB),url: window.location.origin })
+
+        let data = { bot: gTBrmIzuvr.id, chat: parseInt(jHBpBbxbzB),url: window.location.origin }
+        console.log(data)
+        let response = await fetch(DChCJiXPDX + 'get_custom_chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        let respuestaObjeto = await response.json();
+        console.log(respuestaObjeto)
+        console.log(Object.keys(respuestaObjeto).length)
+        console.log(respuestaObjeto.elementos)
+        if (Object.keys(respuestaObjeto).length > 0) {
+            
+                var elementoDesactivar = 0
+                var counterImproveLabel = 0;
+
+                improvebot_buttonsElements = []
+
+                var contenedorPrincipal = document.getElementById('improve_buttons');
+                contenedorPrincipal.innerHTML = ''
+
+                for (let indice in respuestaObjeto.elementos) {
+                    if (Object.keys(respuestaObjeto.elementos[indice]).length > 0) {
+                        if (indice == 'btnFaq'){
+                            improvebot_cantidadBotones ++
+                            var contenedorPrincipal = document.getElementById('improve_buttons');
+                            contenedorPrincipal.innerHTML = ''
+                            console.log("Entre a btnFaq")
+                            console.log(respuestaObjeto.elementos[indice])
+                            ozRadApFvB(respuestaObjeto.elementos[indice],indice);
+                        }
+                        else{
+                            if (document.getElementById("improvebot_animaciontemporal")) {
+                            }
+                            else{
+                                let burbuja = improvebotChatBubble();
+                                vktrUabOUS.append(burbuja);
+                            }
+                            setTimeout(function(){
+                                if (document.getElementById("improvebot_animaciontemporal")) {
+                                    ozRadApFvB(respuestaObjeto.elementos[indice],indice);
+                                    improveBotLimpiarBurbuja();
+                                }
+                                else{
+                                    let burbuja = improvebotChatBubble();
+                                    vktrUabOUS.append(burbuja);
+                                    setTimeout(function(){
+                                        ozRadApFvB(respuestaObjeto.elementos[indice],indice);
+                                        improveBotLimpiarBurbuja();
+                                    },500)
+                                }
+                                
+                            },1000 + counterImproveLabel) 
+                            counterImproveLabel = counterImproveLabel + 1000;
+                        }
+                        if (elementoDesactivar > 0){
+                            improveBotDeactivateInput();
+                        }
+                        else if (elementoDesactivar === 0){
+                            improveBotActivateInput();
+                        }
+                    }
+                    
+                }
+
+                
+                
+            }
+            
+        
+    }
+    else{
+        activarCDNSockerIO().then( function(result){
+            improvebotLiveChatFlagInitSocketFunction();
+        } )
+    }
+}
+
+// String.prototype.replaceAt=function(index, char) {
+//     var a = this.split("");
+//     a[index] = char;
+//     return a.join("");
+// }
+
+let improvebot_FAQActual = 0;
+
+async function ozRadApFvB (element, indice) {
+    let counter = 0
+    if (improvebot_delivery_check == 0){
+        if (gTBrmIzuvr.id == 185){
+            improvebot_deliveryGourmetAPI()
+        }
+        improvebot_delivery_check = improvebot_delivery_check +1
+    }
+    let counterButton = 0;
+
+    console.log(element, indice)
+    console.log(indice)
+
+    if (Object.keys(element).length > 0){
+        switch (indice) {
+            case 'label':
+    
+                console.log("LABEL")
+                const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                improvebot_FAQActual = faq
+
+                for (let indice in element){
+                    let textoFinal = await improvebot_reemplazarNegritas(element[indice].contenido)
+                    if (element[indice].contenido == null || element[indice].contenido == "" || element[indice].contenido == " "){
+                        console.log("elemento vacio")
+                    }
+                    else{
+                        JAygyvzSWO(false, textoFinal);
+                    }
+                    
+                    improveBotLimpiarBurbuja();
+                    
+                }
+                break;
+
+                
+            case 'btnLiveChat': {
+                console.log("BOTON DE LIVE CHAT")
+                for (let indice in element){
+                    console.log(element[indice])
+                    improvebotLiveChatButton(element[indice].contenido);
+                }
+                
+                break;
+            }
+            case 'connectFaq': {
+                for await (let indice of element){
+                    if (indice.tipo == 'file'){
+                        improveBotDeactivateInput();
+                        var divName = document.createElement('div');
+                        divName.style.display = 'flex';
+                        const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                        var input = document.createElement('input');
+                        input.setAttribute('type', 'file');
+                        input.setAttribute('id', 'file_' + indice.id);
+                        input.setAttribute('accept', 'image/*,application/pdf');
+                        input.style.borderRadius = '5px';
+                        input.style.border = '0.12px solid #00000057';
+                        input.style.fontSize = 'x-small';
+                        input.style.boxShadow = '0px 3px 6px 0px rgba(0,0,0,0.55)';
+                        var FooterPrincipal = document.getElementById('improvebot_footerPrincipal');
+                        FooterPrincipal.style.display = 'none';
+                        // Creación de boton adicional
+                        var buttonName = document.createElement('button');
+                        buttonName.innerHTML = 'Envíar';
+                        buttonName.style.boxShadow = '0px 4px 6px 0px rgba(0,0,0,0.55)';
+                        buttonName.style.color = 'white';
+                        buttonName.style.backgroundColor = gTBrmIzuvr.color;
+                        buttonName.style.marginLeft = '5%';
+                        buttonName.style.textAlign = 'center';
+                        buttonName.setAttribute('id', 'improveBot_btnsendName');
+                        buttonName.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            var archivo = input.files[0];
+                            const name = input.files[0].name;
+                            const lastDot = name.lastIndexOf('.');
+
+                            const fileName = name.substring(0, lastDot);
+                            const ext = name.substring(lastDot + 1);
+
+                            let base64 = getBase64(archivo).then(
+                                data => {
+                                    console.log(data)
+                                    const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                                    improvebot_FAQActual = faq
+                                    buttonName.style.display = 'none';
+                                    if (ext == 'pdf'){
+                                        improvebotPetition('get_ans', { faq: faq, bot: gTBrmIzuvr.id,chat: HAdmOsSMIr (), setence: input.files[0].name, url: window.location.origin, id_cliente: gTBrmIzuvr.id_fk_cliente, base64_: data, mimeType: input.files[0].type, extensionArchivo : ext  }).then(elementofaq => {
+                                            improveBotLimpiarBurbuja();
+                                            JAygyvzSWO(true, "Archivo enviado: " + name,'yes');
+                                            for (let indice in elementofaq.elementos){
+                                                console.log(elementofaq.elementos[indice])
+                                                ozRadApFvB(elementofaq.elementos[indice], indice);
+                                            }
+    
+                                            
+                                            var contenedorPrincipal = document.getElementById('improve_buttons');
+                                            contenedorPrincipal.innerHTML = ''
+                                            
+                                        }).catch(e => { console.error(e); });
+
+                                    }
+                                    else
+                                    {
+                                        improvebotPetition('get_ans', { faq: faq, bot: gTBrmIzuvr.id,chat: HAdmOsSMIr (), setence: input.files[0].name, url: window.location.origin, id_cliente: gTBrmIzuvr.id_fk_cliente, base64_: data, mimeType: 'application/image', extensionArchivo : ext  }).then(elementofaq => {
+                                            improveBotLimpiarBurbuja();
+                                            JAygyvzSWO(true, "Archivo enviado: " + name,'yes');
+                                            for (let indice in elementofaq.elementos){
+                                                ozRadApFvB(elementofaq.elementos[indice], indice);
+                                            }
+    
+                                            var contenedorPrincipal = document.getElementById('improve_buttons');
+                                            contenedorPrincipal.innerHTML = ''
+                                            
+                                        }).catch(e => { console.error(e); });
+
+                                        
+                                    }
+                                    
+                                }
+                            );
+                            improvebot_cantidadBotones = 0;
+                            // LIMPIAR BOTONES AQUI
+                            improvebot_limpiarBotones();
+                            
+                        });
+                        divName.append(input);
+                        divName.append(buttonName);
+                        JAygyvzSWO(false, divName);
+                    }
+                    else if (indice.tipo == 'foto'){
+                        improveBotDeactivateInput();
+                        var divName = document.createElement('div');
+                        divName.style.display = 'flex';
+                        console.log("DESACTIVAR INPUT")
+                        console.log("FOTO")
+                        const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                        var input = document.createElement('input');
+                        input.setAttribute('type', 'file');
+                        input.setAttribute('id', 'file_' + indice.id);
+                        input.setAttribute('accept', 'image/*');
+                        input.style.borderRadius = '5px';
+                        input.style.border = '0.12px solid #00000057';
+                        input.style.boxShadow = '0px 3px 6px 0px rgba(0,0,0,0.55)';
+                        var FooterPrincipal = document.getElementById('improvebot_footerPrincipal');
+                        FooterPrincipal.style.display = 'none';
+                        // Creación de boton adicional
+                        var buttonName = document.createElement('button');
+                        buttonName.innerHTML = 'Envíar';
+                        buttonName.style.boxShadow = '0px 4px 6px 0px rgba(0,0,0,0.55)';
+                        buttonName.style.color = 'white';
+                        buttonName.style.backgroundColor = gTBrmIzuvr.color;
+                        buttonName.style.marginLeft = '5%';
+                        buttonName.style.textAlign = 'center';
+                        buttonName.setAttribute('id', 'improveBot_btnsendName');
+                        buttonName.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            console.log("Enviar")
+                            console.log(input.files[0])
+                            var archivo = input.files[0];
+                            console.log(input.files[0].name)
+                            console.log(input.files[0].size)
+                            const name = input.files[0].name;
+                            const lastDot = name.lastIndexOf('.');
+
+                            const fileName = name.substring(0, lastDot);
+                            const ext = name.substring(lastDot + 1);
+
+                            console.log(fileName)
+                            console.log(ext)
+                            
+                            let base64 = getBase64(archivo).then(
+                                data => {
+                                    console.log(data)
+                                    const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                                    improvebot_FAQActual = faq
+                                    buttonName.style.display = 'none';
+                                    if (ext == 'pdf'){
+                                        improvebotPetition('get_ans', { faq: faq, bot: gTBrmIzuvr.id,chat: HAdmOsSMIr (), setence: input.files[0].name, url: window.location.origin, id_cliente: gTBrmIzuvr.id_fk_cliente, base64_: data, mimeType: input.files[0].type, extensionArchivo : ext  }).then(elementofaq => {
+                                            improveBotLimpiarBurbuja();
+                                            JAygyvzSWO(true, "Archivo enviado: " + name,'yes');
+                                            for (let indice in elementofaq.elementos){
+                                                console.log(elementofaq.elementos[indice])
+                                                ozRadApFvB(elementofaq.elementos[indice], indice);
+                                            }
+    
+                                            
+                                            var contenedorPrincipal = document.getElementById('improve_buttons');
+                                            contenedorPrincipal.innerHTML = ''
+                                            
+                                        }).catch(e => { console.error(e); });
+
+                                    }
+                                    else
+                                    {
+                                        improvebotPetition('get_ans', { faq: faq, bot: gTBrmIzuvr.id,chat: HAdmOsSMIr (), setence: input.files[0].name, url: window.location.origin, id_cliente: gTBrmIzuvr.id_fk_cliente, base64_: data, mimeType: 'application/image', extensionArchivo : ext  }).then(elementofaq => {
+                                            improveBotLimpiarBurbuja();
+                                            JAygyvzSWO(true, "Archivo enviado: " + name,'yes');
+                                            for (let indice in elementofaq.elementos){
+                                                console.log(elementofaq.elementos[indice])
+                                                ozRadApFvB(elementofaq.elementos[indice], indice);
+                                            }
+    
+                                            
+                                            var contenedorPrincipal = document.getElementById('improve_buttons');
+                                            contenedorPrincipal.innerHTML = ''
+                                            
+                                        }).catch(e => { console.error(e); });
+
+                                        
+                                    }
+                                }
+                            );
+                            improvebot_cantidadBotones = 0;
+                            // LIMPIAR BOTONES AQUI
+                            improvebot_limpiarBotones();
+                            
+                        });
+                        divName.append(input);
+                        divName.append(buttonName);
+                        JAygyvzSWO(false, divName);
+                    }
+                    else if (indice.tipo == 'pdf'){
+                        improveBotDeactivateInput();
+                        var divName = document.createElement('div');
+                        divName.style.display = 'flex';
+                        console.log("DESACTIVAR INPUT")
+                        console.log("FILE")
+                        const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                        var input = document.createElement('input');
+                        input.setAttribute('type', 'file');
+                        input.setAttribute('id', 'file_' + indice.id);
+                        input.setAttribute('accept', 'application/pdf');
+                        input.style.borderRadius = '5px';
+                        input.style.border = '0.12px solid #00000057';
+                        input.style.boxShadow = '0px 3px 6px 0px rgba(0,0,0,0.55)';
+                        var FooterPrincipal = document.getElementById('improvebot_footerPrincipal');
+                        FooterPrincipal.style.display = 'none';
+                        // Creación de boton adicional
+                        var buttonName = document.createElement('button');
+                        buttonName.innerHTML = 'Envíar';
+                        buttonName.style.boxShadow = '0px 4px 6px 0px rgba(0,0,0,0.55)';
+                        buttonName.style.color = 'white';
+                        buttonName.style.backgroundColor = gTBrmIzuvr.color;
+                        buttonName.style.marginLeft = '5%';
+                        buttonName.style.textAlign = 'center';
+                        buttonName.setAttribute('id', 'improveBot_btnsendName');
+                        buttonName.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            console.log("Enviar")
+                            console.log(input.files[0])
+                            var archivo = input.files[0];
+                            console.log(input.files[0].name)
+                            console.log(input.files[0].size)
+                            const name = input.files[0].name;
+                            const lastDot = name.lastIndexOf('.');
+
+                            const fileName = name.substring(0, lastDot);
+                            const ext = name.substring(lastDot + 1);
+
+                            console.log(fileName)
+                            console.log(ext)
+                            
+                            let base64 = getBase64(archivo).then(
+                                data => {
+                                    console.log(data)
+                                    const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                                    improvebot_FAQActual = faq
+                                    console.log(base64)
+                                    buttonName.style.display = 'none';
+                                    improvebotPetition('get_ans', { faq: faq, bot: gTBrmIzuvr.id,chat: HAdmOsSMIr (), setence: input.files[0].name, url: window.location.origin, id_cliente: gTBrmIzuvr.id_fk_cliente, base64_: data, mimeType: input.files[0].type, extensionArchivo : ext  }).then(elementofaq => {
+                                        improveBotLimpiarBurbuja();
+                                        JAygyvzSWO(true, "Archivo enviado: " + name,'yes');
+                                        for (let indice in elementofaq.elementos){
+                                            console.log(elementofaq.elementos[indice])
+                                            ozRadApFvB(elementofaq.elementos[indice], indice);
+                                        }
+
+                                        
+                                        var contenedorPrincipal = document.getElementById('improve_buttons');
+                                        contenedorPrincipal.innerHTML = ''
+                                        
+                                    }).catch(e => { console.error(e); });
+                                }
+                            );
+                            improvebot_cantidadBotones = 0;
+                            // LIMPIAR BOTONES AQUI
+                            improvebot_limpiarBotones();
+                            
+                        });
+                        divName.append(input);
+                        divName.append(buttonName);
+                        JAygyvzSWO(false, divName);
+                    }
+                    else{
+                        console.log("No es un archivo")
+                        improveBotActivateInput();
+                        const callbackFaq = e => {
+                            e.preventDefault();
+                            improvebot_cantidadBotones = 0;
+                            // LIMPIAR BOTONES AQUI
+                            improvebot_limpiarBotones();
+                            const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                            improvebot_FAQActual = faq
+                            var inputVal = document.getElementsByClassName('IUBdLFSJey');
+                            console.log(inputVal[0].textContent)
+                            JAygyvzSWO(true, inputVal[0].textContent,'yes');
+                            
+                        };
+                        
+                        
+            
+            
+                        // gzTaKGCLli(indice.contenido, callbackFaq);
+                        const EEzwrRIdxN = document.getElementById('improvebot_footerPrincipal');
+                        EEzwrRIdxN.style.display = 'flex'
+                    }
+                    
+                    
+                    
+
+                }
+                break;
+            }
+            case 'btnFaq': {
+                //Evento de click
+                for await (let indice of element){
+                    improveBotDeactivateInput();
+                    
+                    const callbackFaq = e => {
+                        e.preventDefault();
+                        improvebot_cantidadBotones = 0;
+                        // LIMPIAR BOTONES AQUI
+                        improvebot_limpiarBotones();
+                        const faq = (indice.sub_faq > 0 ? indice.sub_faq : indice.faq);
+                        improvebot_FAQActual = faq
+
+                        improvebotPetition('get_ans', { faq: faq, bot: gTBrmIzuvr.id,chat: HAdmOsSMIr (), setence: indice.contenido, url: window.location.origin, id_cliente: gTBrmIzuvr.id_fk_cliente }).then(elementofaq => {
+                            improveBotLimpiarBurbuja();
+                            JAygyvzSWO(true, indice.contenido,'yes');
+                            for (let indice in elementofaq.elementos){
+                                console.log(elementofaq.elementos[indice])
+                                ozRadApFvB(elementofaq.elementos[indice], indice);
+                            }
+
+                            
+                            var contenedorPrincipal = document.getElementById('improve_buttons');
+                            contenedorPrincipal.innerHTML = ''
+                            
+                        }).catch(e => { console.error(e); });
+                    };
+        
+        
+                    if (indice.contenido == null || indice.contenido == "" || indice.contenido == " "){
+                        console.log("elemento vacio")
+                    }
+                    else{
+                        //dibujando btn?
+                        gzTaKGCLli(indice.contenido, callbackFaq);
+                    }
+                    
+
+                }
+                break;
+            }
+            case 'btnHref': {
+                const callbackHref = function (e) {
+                    e.preventDefault();
+    
+                    window.open(element.href, '_blank');
+                };
+                gzTaKGCLli(element.contenido, callbackHref);
+                break;
+            }
+            case 'card':
+                //Evento de click
+                const callbackCard = e => {
+                    e.preventDefault();
+                    // LIMPIAR CARDS AQUI
+                    improvebot_limpiarCards();
+                    
+                    const faq = (element.sub_faq > 0 ? element.sub_faq : element.faq);
+                    
+                    improvebotPetition('get_faq', { faq: faq, bot: gTBrmIzuvr.id,chat: HAdmOsSMIr (), text: element.hijo, url: window.location.origin }).then(faq => {
+                        improveBotLimpiarBurbuja();
+                        // IANS
+                        //Mensaje enviado por cliente al presionar el boton. Es el nombre de la FAQ en cuestión
+                        JAygyvzSWO(true, element.hijo, 'yes');
+                        var elementoDesactivar = 0
+                        let counterImproveLabel = 0;
+                        if (faq.elementos.length > 0) {
+                            faq.elementos.forEach(element => {
+                                console.log(element.tipo)
+                                if (element.tipo == 'btnFaq' || element.tipo == 'card'|| element.read == 'true'){
+                                    ++elementoDesactivar;
+                                    improveBotDeactivateInput();
+                                    ozRadApFvB(element);
+                                }
+                                else{
+                                    if (document.getElementById("improvebot_animaciontemporal")) {
+                                    }
+                                    else{
+                                        let burbuja = improvebotChatBubble();
+                                        vktrUabOUS.append(burbuja);
+                                    }
+                                    setTimeout(function(){
+                                        if (document.getElementById("improvebot_animaciontemporal")) {
+                                            ozRadApFvB(element);
+                                            improveBotLimpiarBurbuja();
+                                        }
+                                        else{
+                                            let burbuja = improvebotChatBubble();
+                                            vktrUabOUS.append(burbuja);
+                                            setTimeout(function(){
+                                                ozRadApFvB(element);
+                                                improveBotLimpiarBurbuja();
+                                            },500)
+                                        }
+                                        
+                                    },1000 + counterImproveLabel) 
+                                }
+                                if (elementoDesactivar > 0){
+                                    improveBotDeactivateInput();
+                                }
+                                else if (elementoDesactivar === 0){
+                                    improveBotActivateInput();
+                                }
+                                
+                                counterImproveLabel = counterImproveLabel + 1000;
+                                
+                            });
+                        } else {
+                            JAygyvzSWO(false, faq.respuestas.replace(/"/g, ''));
+                        }
+                    }).catch(e => { console.error(e); });
+                };
+                var img = document.createElement('img');
+                img.src = EUEfixfCco + element.img;
+                var div = document.createElement('div');
+                img.style.width = '100%';
+                img.style.height = '100%';
+                img.style.borderTopRightRadius = '5%';
+                img.style.borderTopLeftRadius = '5%';
+                var title = document.createElement('h4');
+                var atitle = document.createElement('a')
+                var description = document.createElement('p');
+                var button = document.createElement('button');
+                button.innerHTML = 'Seleccionar';
+                button.style.width = "100%";
+                atitle.innerHTML = element.hijo;
+                atitle.style.height = '20%';
+                description.style.height = '70%';
+                description.style.height = '70%';
+                atitle.style.fontSize = 'x-small';
+                atitle.style.fontFamily = 'Poppins,sans-serif';
+                description.innerHTML = element.contenido;
+                button.style.backgroundColor = gTBrmIzuvr.color;
+                button.addEventListener('click', callbackCard);
+                img.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    window.open(EUEfixfCco + element.img, '_blank');
+                });
+                var div1 = document.createElement('div')
+                div1.classList.add("product-price")
+                var div2 = document.createElement('div')
+                div2.classList.add("product-bottom-details")
+                var div3 = document.createElement('div')
+                div3.classList.add("product-details")
+                var div4 = document.createElement('div')
+                div4.classList.add("product-tumb")
+                div4.style.display = 'block';
+                div4.style.height = '30%';
+                div4.style.padding = '0%';
+                div3.style.display = 'block';
+                div3.style.height = '70%';
+                div2.style.display = 'block';
+                div2.style.height = '10%';
+                div1.style.width = '100%';
+                div1.style.backgroundColor = '100%';
+                div1.style.display = 'block';
+                var divinterno = document.createElement('div');
+                divinterno.classList.add("product-card")
+                title.append(atitle)
+                div3.append(title)
+                div3.append(description)
+                div3.append(div2);
+                div2.append(div1)
+                div1.append(button)
+                div4.append(img)
+                divinterno.append(div4)
+                divinterno.append(div3)
+                divinterno.style.width = '70%'
+                divinterno.style.borderRadius = '5%'
+                div3.style.marginTop = '3%'
+                improvebot_writecard_element(divinterno);
+                break;
+            case 'btnMenu':
+                break;
+            case 'btnCalendly':
+                // crear elemento boton que pueda abrir la función ImproveBot_dibujarBotonCalendly
+                var button = document.createElement('button');
+                button.innerHTML = 'Click para agendar cita';
+                button.addEventListener('click', function (e) {
+                    ImproveBot_dibujarBotonCalendly(element.href);
+                });
+                button.style.backgroundColor = 'transparent';
+                JAygyvzSWO(false, button);
+    
+                break;
+            case 'imgDiv':
+                var ListaPrincipal = document.getElementById('improvebot_listaPrincipal');
+                for (let indice in element){
+                    var imgDiv = document.createElement('img');
+                    imgDiv.setAttribute('class', 'improvebotIMG');
+                    imgDiv.setAttribute('src', element[indice].img);
+                    imgDiv.style.width = '90%';
+                    imgDiv.style.height = 'auto';
+        
+                    imgDiv.style.borderBottomLeftRadius = '10%';
+                    imgDiv.style.borderBottomRightRadius = '10%';
+                    imgDiv.style.borderTopRightRadius = '10%';
+                    imgDiv.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        window.open(element.href ? element.href :  element[indice].img, '_blank');
+                    });
+
+                    ListaPrincipal.append(imgDiv);
+                    UzBKRiDTSK();
+                    
+                }
+                
+                break;
+            case 'slctd':
+                // var divName = document.createElement('div');
+                // divName.style.display = 'flex';
+                // var input = document.createElement('input');
+                // input.setAttribute('id', 'improveBot_inputName');
+                // input.setAttribute('type', 'text');
+                // input.style.borderRadius = '5px';
+                // input.style.border = '0.12px solid #00000057';
+                // input.style.boxShadow = '0px 3px 6px 0px rgba(0,0,0,0.55)';
+                // var FooterPrincipal = document.getElementById('improvebot_footerPrincipal');
+                // FooterPrincipal.style.display = 'none';
+                // // Creación de boton adicional
+                // var buttonName = document.createElement('button');
+                // buttonName.innerHTML = 'Envíar';
+                // buttonName.style.boxShadow = '0px 4px 6px 0px rgba(0,0,0,0.55)';
+                // buttonName.style.color = 'white';
+                // buttonName.style.backgroundColor = gTBrmIzuvr.color;
+                // buttonName.style.marginLeft = '5%';
+                // buttonName.style.textAlign = 'center';
+                // buttonName.setAttribute('id', 'improveBot_btnsendName');
+                // buttonName.addEventListener('click', function (e) {
+                //     ImproveBot_sendName();
+                // });
+                // divName.append(input);
+                // divName.append(buttonName);
+                // JAygyvzSWO(false, divName);
+                improveBotNameFlag = true;
+                break;
+            case 'EApi':
+
+                var divFormulario = document.createElement('div');
+                var formulario = document.createElement('form');
+                improvebotPetition('get_formulario', { id_enpoint: element.contenido, url: window.location.origin }).then(datos => {
+                    improveBotLimpiarBurbuja();
+                    datos.forEach(valor => {
+                        formulario.id = 'formularioApi' + element.contenido;
+                        div = document.createElement('div');
+    
+                        const label = document.createElement('label');
+                        const input = document.createElement('input');
+                        // const tipo = 'text';
+    
+                        label.innerHTML = valor.llave;
+    
+                        input.placeholder = valor.llave;
+                        input.name = valor.llave;
+                        input.type = element.href;
+    
+                        div.append(label);
+                        div.append(input);
+    
+                        formulario.append(div);
+                    });
+                });
+    
+                var btnEnviarApi = document.createElement('button');
+                btnEnviarApi.type = 'submit';
+                btnEnviarApi.addEventListener('click', event => {
+                    event.preventDefault();
+                    const datos = new FormData();
+                    datos.append('id_api', element.href);
+                    datos.append('ruta', element.contenido);
+                    var formularioApi = document.getElementById(formulario.id);
+    
+                    for (var i = 0; i < formularioApi.length; i++) {
+                        datos.append(formularioApi[i].name, formularioApi[i].value);
+                    }
+                    var respuestaApi = improvebotSendApi('get_api_formulario', datos);
+                    respuestaApi.then(response => {
+                    });
+                });
+                btnEnviarApi.innerHTML = 'enviar';
+    
+                divFormulario.append(formulario);
+                divFormulario.append(btnEnviarApi);
+    
+                JAygyvzSWO(false, divFormulario);
+                break;
+            
+            case 'file':
+                
+                break
+            
+            default:
+                break;
+            }
+    }
+
+}
+
+function getBase64(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        let encoded = reader.result.toString().replace(/^data:(.*,)?/, '');
+        if ((encoded.length % 4) > 0) {
+          encoded += '='.repeat(4 - (encoded.length % 4));
+        }
+        resolve(encoded);
+      };
+      reader.onerror = error => reject(error);
+    });
+  }
+
+function ImproveBot_sendName () {
+    var inputVal = document.getElementById('improveBot_inputName');
+    improvebotSendNameInputApi(inputVal.value).then(response => {
+    }).catch(error => { console.error(error); });
+    inputVal.setAttribute('disabled', '');
+    document.getElementById('improveBot_btnsendName').setAttribute('disabled', '');
+    var FooterPrincipal = document.getElementById('improvebot_footerPrincipal');
+    FooterPrincipal.style.display = 'flex';
+}
+
+function ImproveBot_dibujarBotonCalendly (href) {
+    var div_iframe_improve = document.createElement('div');
+    div_iframe_improve.style.height = '100%';
+    div_iframe_improve.setAttribute('id', 'improvebot_diviframe');
+
+    var buttonback_iframe_improve = document.createElement('button');
+    buttonback_iframe_improve.type = 'button';
+    buttonback_iframe_improve.setAttribute('id', 'improvebot_btnback');
+    buttonback_iframe_improve.innerText = 'Volver al chat';
+
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('class', 'calendly');
+    iframe.setAttribute('src', href);
+    iframe.style.width = '100%';
+    iframe.style.height = '85%';
+
+    var contenedorPrincipal = document.getElementById('improvebot_contenedorPrincipal');
+    var ListaPrincipal = document.getElementById('improvebot_listaPrincipal');
+    var FooterPrincipal = document.getElementById('improvebot_footerPrincipal');
+    var PoweredBy = document.getElementById('improvebot_poweredbyPrincipal');
+    PoweredBy.style.display = 'none';
+    ListaPrincipal.style.display = 'none';
+    FooterPrincipal.style.display = 'none';
+
+    buttonback_iframe_improve.addEventListener('click', ImproveBot_ComeBackButton);
+    buttonback_iframe_improve.style.padding = '10px';
+    buttonback_iframe_improve.style.margin = '5px';
+    buttonback_iframe_improve.style.color = '#ffffff';
+    buttonback_iframe_improve.style.backgroundColor = gTBrmIzuvr.color;
+    buttonback_iframe_improve.style.boxShadow = '0px 4px 6px 0px rgba(0,0,0,0.55)';
+
+    var poweredByKrino = document.createElement('div');
+    poweredByKrino.classList.add('poweredByKrino');
+    poweredByKrino.setAttribute('id', 'improvebot_poweredbySecundario');
+
+    const poweredByKrinoImg = document.createElement('img');
+    poweredByKrinoImg.src = 'https://static-for-flask-krino.s3.amazonaws.com/static/img/Logotipo+Krino-09.png';
+    poweredByKrinoImg.classList.add('poweredbyimprovebot');
+
+    const buttonimprove = document.createElement('button');
+    buttonimprove.classList.add('buttonKImproveBot');
+    buttonimprove.style.display = "inline-flex";
+
+    const poweredByKrinoAHref = document.createElement('a');
+    poweredByKrinoAHref.classList.add('poweredByKrinoAHref');
+    poweredByKrinoAHref.href = 'https://krino.ai/';
+    poweredByKrinoAHref.target = '_blank';
+
+    const improveTxtUsedby = document.createElement('span');
+    improveTxtUsedby.innerText = 'Power by Krino';
+    improveTxtUsedby.classList.add('textImproveUsedBy');
+    improveTxtUsedby.style.marginTop = '2%';
+    improveTxtUsedby.style.verticalAlign = '50% !important';
+    improveTxtUsedby.style.marginLeft = '5px';
+
+    poweredByKrinoAHref.append(poweredByKrinoImg);
+    buttonimprove.append(poweredByKrinoAHref);
+    buttonimprove.append(improveTxtUsedby);
+
+    poweredByKrino.append(buttonimprove);
+    div_iframe_improve.append(buttonback_iframe_improve);
+    div_iframe_improve.append(iframe);
+    div_iframe_improve.append(poweredByKrino);
+    contenedorPrincipal.append(div_iframe_improve);
+}
+
+function improvebot_limpiarCards () {
+    const elementosli = Array.prototype.slice.call(document.getElementsByClassName('splide__slide'), 0);
+    for (const element of elementosli) {
+        element.remove();
+    }
+    const botones = Array.prototype.slice.call(document.getElementsByClassName('splide__pagination'), 0);
+    for (const element2 of botones) {
+        element2.remove();
+    }
+
+    var improvebot_splide__arrow = document.getElementsByClassName('splide__arrow--next');
+    var improvebot_splide__prev= document.getElementsByClassName('splide__arrow--prev');
+    improvebot_splide__arrow[0].style.boxSizing = 'border-box';
+    improvebot_splide__prev[0].style.boxSizing = 'border-box';
+
+}
+
+function improvebot_limpiarBotones () {
+    const botones = Array.prototype.slice.call(document.getElementsByClassName('SweWCzGWfE'), 0);
+    for (const element of botones) {
+        element.remove();
+    }
+    const botonesnew = Array.prototype.slice.call(document.getElementsByClassName('Buttons_improve'), 0);
+    for (const element of botonesnew) {
+        element.remove();
+    }
+}
+
+function improvebotChatBubble () {
+    const li = document.createElement('li');
+
+    li.setAttribute('id', 'improvebot_animaciontemporal');
+
+    const divBubbleImprove = document.createElement('div');
+    divBubbleImprove.classList.add('chat-bubble-improvebot-inchat');
+
+    const divtyping = document.createElement('div');
+    divtyping.classList.add('typing-improvebot');
+
+    const divdot = document.createElement('div');
+    divdot.classList.add('dot-improvebot');
+
+    const divdot2 = document.createElement('div');
+    divdot2.classList.add('dot-improvebot');
+
+    const divdot3 = document.createElement('div');
+    divdot3.classList.add('dot-improvebot');
+
+    divtyping.append(divdot);
+    divtyping.append(divdot2);
+    divtyping.append(divdot3);
+
+    divBubbleImprove.append(divtyping);
+
+    li.append(divBubbleImprove);
+    // Burbuja creada
+
+    return li;
+}
+
+function improvebotElementsInit () {
+    
+
+    yKRsYXgiwS.append(divInicial)
+
+    divInicial.classList.add('dnnoPQOJXG');
+    activarCDNCarousel();
+
+    if (gTBrmIzuvr.logo === 'no') {
+        divInicial.style.backgroundColor = gTBrmIzuvr.color;
+    } else {
+        divInicial.style.backgroundImage = 'url("' + gTBrmIzuvr.logo + '")';
+        divInicial.style.backgroundPosition = 'center';
+        divInicial.style.backgroundSize = 'contain';
+        divInicial.style.borderRadius = '42px';
+        divInicial.style.backgroundRepeat = 'no-repeat';
+    }
+    //sacar burbuja con  3 puntos
+    const divBubble = document.createElement('div');
+    divBubble.classList.add('buble-chat-animation');
+
+    const divPoint1 = document.createElement('div');
+    divPoint1.classList.add('point-rebotando1');
+
+    const divPoint2 = document.createElement('div');
+    divPoint2.classList.add('point-rebotando2');
+
+    const divPoint3 = document.createElement('div');
+    divPoint3.classList.add('point-rebotando3');
+
+    divBubble.append(divPoint1);
+    divBubble.append(divPoint2);
+    divBubble.append(divPoint3);
+
+    const iComment = document.createElement('i');
+
+    const divChat = document.createElement('div');
+    divChat.classList.add('TnoLYVvCEN');
+    divChat.setAttribute('id', 'improvebot_contenedorPrincipal');
+
+    const divHeader = document.createElement('div');
+    divHeader.classList.add('aGRohHbaqo');
+    divHeader.setAttribute('id', 'improvebot_headerPrincipal');
+    divHeader.style.background = gTBrmIzuvr.color;
+
+    const divImg = document.createElement('div');
+    divImg.classList.add('imagen-chatbotxtop');
+    divImg.style.backgroundImage = 'url(' + (gTBrmIzuvr.image === 'none_image' ? 'https://krino.cl/img/improvebot/avatar.svg' :  gTBrmIzuvr.image) + ')';
+
+    const spanTitle = document.createElement('span');
+    spanTitle.classList.add('KVwDOaSOKB');
+    spanTitle.innerHTML = gTBrmIzuvr.name_bot;
+
+    const closeButton = document.createElement('button');
+    closeButton.innerHTML = 'x';
+    closeButton.style.color = gTBrmIzuvr.color;
+
+    divHeader.append(divImg);
+    divHeader.append(spanTitle);
+    divHeader.append(closeButton);
+
+    vktrUabOUS = document.createElement('ul');
+    vktrUabOUS.classList.add('prbKppPRAs');
+    vktrUabOUS.setAttribute('id', 'improvebot_listaPrincipal');
+    vktrUabOUS.style.color = gTBrmIzuvr.color;
+
+
+    
+    improvebot_ulcards = document.createElement('ul');
+    improvebot_ulcards.classList.add('splide__list');
+    improvebot_ulcards.setAttribute('id', 'improvebot_listaPrincipalCards');
+    improvebot_ulcards.style.color = gTBrmIzuvr.color;
+
+
+    const DivCard = document.createElement('div');
+    DivCard.classList.add('splide');
+
+    const DivCard2 = document.createElement('div');
+    DivCard2.classList.add('splide__track');
+
+    DivCard2.append(improvebot_ulcards)
+    DivCard.append(DivCard2);
+
+
+
+
+    const divFooter = document.createElement('div');
+    divFooter.classList.add('EEzwrRIdxN');
+    divFooter.setAttribute('id', 'improvebot_footerPrincipal');
+
+    KRuQZYzyGZ = document.createElement('div');
+    KRuQZYzyGZ.classList.add('IUBdLFSJey');
+    KRuQZYzyGZ.contentEditable = true;
+    KRuQZYzyGZ.setAttribute('disabled', true);
+    KRuQZYzyGZ.style.border = '2px solid ' + gTBrmIzuvr.color;
+    KRuQZYzyGZ.style.color = gTBrmIzuvr.color;
+
+    const sendButton = document.createElement('button');
+    sendButton.id = 'sendMessage';
+    sendButton.innerHTML = 'enviar';
+    sendButton.style.border = '2px solid ' + gTBrmIzuvr.color;
+    sendButton.style.color = gTBrmIzuvr.color;
+    const buttonsKrino = document.createElement('div');
+    buttonsKrino.id = 'improve_buttons'
+
+    const poweredByKrino = document.createElement('div');
+    poweredByKrino.classList.add('poweredByKrino');
+    poweredByKrino.setAttribute('id', 'improvebot_poweredbyPrincipal');
+
+    const poweredByKrinoImg = document.createElement('img');
+    poweredByKrinoImg.src = 'https://static-for-flask-krino.s3.amazonaws.com/static/img/Logotipo+Krino-09.png';
+    poweredByKrinoImg.classList.add('poweredbyimprovebot');
+
+    const buttonimprove = document.createElement('button');
+    buttonimprove.classList.add('buttonKImproveBot');
+
+    const poweredByKrinoAHref = document.createElement('a');
+    poweredByKrinoAHref.classList.add('poweredByKrinoAHref');
+    poweredByKrinoAHref.href = 'https://krino.ai/';
+    poweredByKrinoAHref.target = '_blank';
+
+    const improveTxtUsedby = document.createElement('span');
+    improveTxtUsedby.innerText = 'Power by Krino';
+    improveTxtUsedby.classList.add('textImproveUsedBy');
+    improveTxtUsedby.style.marginTop = '2%';
+    improveTxtUsedby.style.verticalAlign = '50% !important';
+    improveTxtUsedby.style.marginLeft = '5px';
+
+    poweredByKrinoAHref.append(poweredByKrinoImg);
+    buttonimprove.append(poweredByKrinoAHref);
+    buttonimprove.append(improveTxtUsedby);
+    poweredByKrino.append(buttonimprove);
+
+    divFooter.append(KRuQZYzyGZ);
+    divFooter.append(sendButton);
+
+    divChat.append(divHeader);
+    divChat.append(vktrUabOUS);
+    divChat.append(divFooter);
+    divChat.append(buttonsKrino)
+    divChat.append(DivCard);
+    divChat.append(poweredByKrino);
+
+    divInicial.append(divBubble);
+    divInicial.append(iComment);
+    divInicial.append(divChat);
+
+    setTimeout(function () {
+        if (improveBotCallToActionFlag) ImproveBot_CalltoAction();
+    }, 5000);
+}
+
+function wCnJpMUejb () {
+    window.sessionStorage.setItem('jHBpBbxbzB', jHBpBbxbzB);
+}
+
+function HAdmOsSMIr () {
+    return window.sessionStorage.getItem('jHBpBbxbzB');
+}
+
+function ImproveBot_CalltoAction () {
+    var divclose = document.createElement('button')
+    divclose.setAttribute('id', 'divimprovebot_calltoaction');
+    divclose.style.display = 'block';
+    divclose.style.position = 'absolute';
+    divclose.style.width = '15px';
+    divclose.style.right = '0px';
+    divclose.style.bottom = '60px';
+    divclose.style.borderRadius = '50%'
+    
+    divclose.style.backgroundColor = "#4a4646f5";
+    var textoClose = document.createElement('a');
+    textoClose.style.color = '#fff';
+    textoClose.style.fontFamily = 'Poppins, sans-serif';
+    textoClose.style.fontSize = '8px';
+    textoClose.style.display = 'block';
+    textoClose.style.margin = '15%';
+    textoClose.style.alignSelf = 'center';
+    textoClose.style.textAlign = 'center';
+    textoClose.innerHTML = "X"
+    divclose.style.borderStyle = 'hidden'
+    divclose.append(textoClose);
+    divclose.addEventListener('click',function(){
+        var improve_calltoactiondisabled = document.getElementById('improvebot_calltoaction');
+        if (improve_calltoactiondisabled){
+            improve_calltoactiondisabled.style.display = 'none';
+            document.getElementById('divimprovebot_calltoaction').style.display = 'none';
+        } 
+    })
+
+
+
+    var divx = document.createElement('div');
+    divx.style.display = 'block';
+    divx.style.position = 'absolute';
+    divx.style.width = '100%';
+    divx.style.height = 'auto';
+    divx.style.bottom = '80%';
+    divx.style.borderRadius = '10px';
+    divx.style.backgroundColor = '#ffffff';
+    divx.style.boxShadow = "rgb(0 0 0 / 40%) 2px 3px 3px 1px";
+    divx.setAttribute('id', 'improvebot_calltoaction');
+    divx.style.transition = 'top 2s';
+    divx.style.border = "solid 0.5px";
+    divx.style.borderColor = "grey";
+    divx.style.wordBreak = "break-word";
+    var texto = document.createElement('a');
+    texto.style.display = 'block ';
+    texto.style.padding = '4.3%';
+    texto.innerHTML = improvebot_textoinicio;
+
+    texto.style.color = '#000';
+    texto.style.fontFamily = 'Poppins, sans-serif';
+    texto.style.fontSize = '12px';
+    texto.style.alignSelf = 'center';
+    texto.style.textAlign = 'center';
+
+
+    localStorage.setItem("Improve-callToActionTime", Date.now());
+
+
+    divx.append(texto);
+
+    
+
+
+    var divCallToAction = document.createElement('div'); 
+    
+    divCallToAction.append(divx);
+    divCallToAction.append(divclose);
+    divCallToAction.setAttribute('id', 'divimprovebot_calltoaction_general');
+    divCallToAction.style.position = 'fixed';
+    divCallToAction.style.right = '100px';
+    divCallToAction.style.width = '37%'
+    divCallToAction.style.bottom = '82px';
+    divCallToAction.style.zIndex = '98999898'
+    yKRsYXgiwS.append(divCallToAction)
+    
+
+}
+
+divInicial.addEventListener('click', jdZEkhlBLR);
+
+function ImproveBot_ComeBackButton () {
+    var remove1 = document.getElementById('improvebot_diviframe');
+    remove1.remove();
+    var ListaPrincipal = document.getElementById('improvebot_listaPrincipal');
+    var FooterPrincipal = document.getElementById('improvebot_footerPrincipal');
+    var PoweredBy = document.getElementById('improvebot_poweredbyPrincipal');
+    PoweredBy.style.display = 'block';
+    ListaPrincipal.style.display = 'block';
+    FooterPrincipal.style.display = 'flex';
+}
+
+function jdZEkhlBLR () {
+    improveBotCallToActionFlag = false;
+    divInicial.removeAttribute('style');
+    var improve_calltoactiondisabled = document.getElementById('improvebot_calltoaction');
+    if (improve_calltoactiondisabled){
+        improve_calltoactiondisabled.style.display = 'none';
+        document.getElementById('divimprovebot_calltoaction').style.display = 'none';
+    } 
+
+    divInicial.getElementsByTagName('i')[0].hidden = true;
+    divInicial.classList.add('PBzfSIFWlv');
+    divInicial.getElementsByClassName('TnoLYVvCEN')[0].classList.add('RTShwqPmbn');
+
+    KRuQZYzyGZ.addEventListener('keydown', YURsNnADbt);
+    KRuQZYzyGZ.attributes.disabled.value = false;
+    KRuQZYzyGZ.focus();
+
+
+    divInicial.removeEventListener('click', jdZEkhlBLR);
+    divInicial.querySelector('.aGRohHbaqo button').addEventListener('click', AkcqasBZht);
+    document.getElementById('sendMessage').addEventListener('click', SPQpZDaumm);
+
+    vktrUabOUS.scrollTop = vktrUabOUS.scrollHeight;
+    if (!improvebot_iniciado){
+        jHBpBbxbzB = HAdmOsSMIr();
+        console.log({ bot: gTBrmIzuvr.id, ip: direccionIP, browser: navigator.userAgent, url: window.location.origin, senderId: '', sid_id:'' })
+
+        improvebotPetition('make_chat', { bot: gTBrmIzuvr.id, ip: direccionIP, browser: navigator.userAgent, url: window.location.origin, senderId: '', sid_id:'' }).then(r => {
+            jHBpBbxbzB = parseInt(r.id);
+            console.log("El id del registro de respuesta es: "+jHBpBbxbzB)
+            wCnJpMUejb();
+        }).catch(error => console.error(error));
+        
+        layRMXrLNe(); 
+    }
+
+
+
+    improvebot_iniciado = true
+
+
+}
+
+function improvebotLiveChatFlagInitSocketFunction(){
+    if (improvebotLiveChatFlagInitSocket == false){
+        socket = io.connect('https://socket-improve.krino.ai/');
+        
+        socket.on("connect", () => {
+            
+            socket.emit("identificacion", {idchat: jHBpBbxbzB}) 
+            //socket.emit("identificacion", {idchat: jHBpBbxbzB}) 
+        });
+        socket.on("mensaje-personal", function(data) {
+            var objetoJSON =  JSON.stringify(data);
+            objetoJSON =  JSON.parse(objetoJSON);
+            if (objetoJSON['tipo'] == 'exit' ){
+                vktrUabOUS.insertAdjacentHTML('beforeend','<li class="amOArAVraw" style="border: 2px solid #ccc;background-color: #c5a6e070;display: flex;padding: 1px;margin-right: 1%;min-width: 101%;/* wid;width: 100%;;t-align: center; */justify-content: center;">Terminó conversación con ejecutivo</li>');
+                improvebotLiveChatFlag = false;
+                improvebotLiveChatFlagInitSocket = false;
+            }
+            else if (objetoJSON['tipo'] == 'iframe' ){
+                JAygyvzSWO(true, objetoJSON['texto']);
+            }
+            else{
+                JAygyvzSWO(false, objetoJSON['texto']);
+            }
+            
+        });
+        improvebotLiveChatFlagInitSocket= true;
+    }
+    
+}
+
+function AkcqasBZht () {
+    divInicial.classList.add('dnnoPQOJXG');
+    if (gTBrmIzuvr.logo === 'no') {
+        divInicial.style.backgroundColor = gTBrmIzuvr.color;
+    } else {
+        divInicial.style.backgroundImage = 'url("' + gTBrmIzuvr.logo + '")';
+        divInicial.style.backgroundPosition = 'center';
+        divInicial.style.backgroundSize = 'contain';
+        divInicial.style.borderRadius = '42px';
+        divInicial.style.backgroundRepeat = 'no-repeat';
+    }
+    yKRsYXgiwS.style.backgroundColor = gTBrmIzuvr.color;
+    divInicial.getElementsByClassName('TnoLYVvCEN')[0].classList.remove('RTShwqPmbn');
+    divInicial.getElementsByClassName('TnoLYVvCEN')[0].classList.hidden = true;
+    divInicial.getElementsByTagName('i')[0].hidden = false;
+
+    divInicial.classList.remove('PBzfSIFWlv');
+
+    divInicial.querySelector('.aGRohHbaqo button').removeEventListener('click', AkcqasBZht);
+    document.getElementById('sendMessage').removeEventListener('click', SPQpZDaumm);
+
+    KRuQZYzyGZ.removeEventListener('keydown', YURsNnADbt);
+    KRuQZYzyGZ.attributes.disabled.value = true;
+    KRuQZYzyGZ.blur();
+
+    setTimeout(function () {
+        divInicial.getElementsByClassName('TnoLYVvCEN')[0].classList.remove('RTShwqPmbn');
+        divInicial.getElementsByClassName('TnoLYVvCEN')[0].hidden = false;
+        divInicial.addEventListener('click', jdZEkhlBLR);
+    }, 500);
+}
+
+async function SPQpZDaumm () {
+    var newMessage = KRuQZYzyGZ.innerHTML.replace(/\<div\>|\<br.*?\>/ig, '\n').replace(/\<\/div\>/g, '').trim().replace(/\n/g, '<br>');
+
+    if (!newMessage) return;
+
+    improvebotHistorialFlag = false;
+
+    improvebotHistorial.push({ bot_or_human: false, message: newMessage });
+
+    improvebot_limpiarBotones();
+
+    if (improvebotLiveChatFlag == true){
+        if (improvebotLiveChatFlagInitSocket == true){
+            document.getElementsByClassName('IUBdLFSJey').value = '';
+            socket.emit("mensaje-personal", {
+                idchat: jHBpBbxbzB,
+                texto: newMessage,
+                tipo: "iframe",
+                fecha: new Date().toLocaleString().replace(",","").replace(/:.. /," ")
+            });
+
+
+        }
+        
+    }
+    else{
+        var inputVal = document.getElementsByClassName('IUBdLFSJey');
+        // Mensaje de retorno con ChatBot
+        improvebotPetition('get_ans', { faq: improvebot_FAQActual, bot: gTBrmIzuvr.id,chat: HAdmOsSMIr (), setence: inputVal[0].textContent, url: window.location.origin, id_cliente: gTBrmIzuvr.id_fk_cliente }).then(elementofaq => {
+            improveBotLimpiarBurbuja();
+            JAygyvzSWO(true, inputVal[0].textContent,'yes');
+            inputVal[0].textContent = "";
+            for (let indice in elementofaq.elementos){
+                ozRadApFvB(elementofaq.elementos[indice], indice);
+            }
+
+            
+            var contenedorPrincipal = document.getElementById('improve_buttons');
+            contenedorPrincipal.innerHTML = ''
+            
+        }).catch(e => { console.error(e); });
+
+    }
+
+    
+}
+
+function JAygyvzSWO (meOrYou, message, btn) {
+    const li = document.createElement('li');
+    
+    li.classList.add(meOrYou ? 'amOArAVraw' : 'WrdaMJNcVA');
+    li.style.border = '2px solid ' + gTBrmIzuvr.color;
+    if (meOrYou == false){
+        improvebotSonido.play();
+    }
+
+    if (typeof message === 'string') {
+        message = NIcSfZYyDv(message);
+        var saltodelinea = message.includes("[JUMP_LINE]")
+        saltodelinea = message.replaceAll("[JUMP_LINE]","<br>");
+        li.innerHTML = saltodelinea;
+    } else {
+        li.append(message);
+    }
+
+    vktrUabOUS.append(li);
+    UzBKRiDTSK();
+}
+
+var splide;
+
+function improvebot_writecard_element (div) {
+    const li = document.createElement('li');
+    li.append(div);
+    li.className = 'splide__slide';
+
+    var improvebot_ulcards = document.getElementById('improvebot_listaPrincipalCards');
+    var improvebot_ulcards1 = document.getElementsByClassName('splide__slide');
+    if (improvebot_ulcards1.length > 0){
+        var improvebot_splide__arrow = document.getElementsByClassName('splide__arrow--next');
+        var improvebot_splide__prev= document.getElementsByClassName('splide__arrow--prev');
+        improvebot_splide__arrow[0].style.boxSizing = 'content-box';
+        improvebot_splide__prev[0].style.boxSizing = 'content-box';
+        improvebot_splide__prev[0].style.marginLeft = '11%';
+        improvebot_splide__arrow[0].style.marginRight = '11%'
+        splide.add(li);
+    }
+    else{
+        improvebot_ulcards.append(li)
+        splide = new Splide( '.splide',{
+            'cover': true,
+            fixedHeight: '20rem',
+            'heightRatio': 0.5,
+            type   : 'loop',
+            focus  : 'center',
+            padding: {
+                right: '20%',
+                left : '20%',
+            }
+        } ).mount();
+    }
+
+    
+    var contenedorPrincipal = document.getElementById('improvebot_contenedorPrincipal');
+
+
+
+    var PoweredBy = document.getElementById('improvebot_poweredbyPrincipal');
+    if (PoweredBy != null){
+        PoweredBy.remove();
+    }
+
+    
+
+    let poweredByKrino = document.createElement('div');
+    poweredByKrino.classList.add('poweredByKrino');
+    poweredByKrino.setAttribute('id', 'improvebot_poweredbyPrincipal');
+
+    let poweredByKrinoImg = document.createElement('img');
+    poweredByKrinoImg.src = 'https://static-for-flask-krino.s3.amazonaws.com/static/img/Logotipo+Krino-09.png';
+    poweredByKrinoImg.classList.add('poweredbyimprovebot');
+
+    let buttonimprove = document.createElement('button');
+    buttonimprove.classList.add('buttonKImproveBot');
+
+    let poweredByKrinoAHref = document.createElement('a');
+    poweredByKrinoAHref.classList.add('poweredByKrinoAHref');
+    poweredByKrinoAHref.href = 'https://krino.ai/';
+    poweredByKrinoAHref.target = '_blank';
+
+    const improveTxtUsedby = document.createElement('span');
+    improveTxtUsedby.innerText = 'Power by Krino';
+    improveTxtUsedby.classList.add('textImproveUsedBy');
+    improveTxtUsedby.style.marginTop = '2%';
+    improveTxtUsedby.style.verticalAlign = '50% !important';
+    
+    improveTxtUsedby.style.marginLeft = '5px';
+
+
+    poweredByKrinoAHref.append(poweredByKrinoImg);
+    buttonimprove.append(poweredByKrinoAHref);
+    buttonimprove.append(improveTxtUsedby);
+    poweredByKrino.append(buttonimprove);
+
+    contenedorPrincipal.append(poweredByKrino)
+    
+
+    UzBKRiDTSK();
+}
+
+
+
+function gzTaKGCLli (text, callback) {
+
+    const button = document.createElement('button');
+    button.style.backgroundColor = gTBrmIzuvr.color;
+    const rgb = LmPgXDUjpk(gTBrmIzuvr.color);
+    button.style.color = WuuUyRhAzc(rgb.r, rgb.g, rgb.b) ? '#000000' : '#FFFFFF';
+    button.addEventListener('click', callback);
+    button.innerText = text;
+
+    var contenedorPrincipal = document.getElementById('improve_buttons');
+    console.log("Botones")
+    button.style.marginBottom = '15px';
+    button.style.height = '30px';
+    button.style.marginLeft = 'auto';
+    button.style.marginRight = 'auto';
+    button.style.minHeight = "5%";
+    button.className =  'Buttons_improve';
+    console.log(improvebot_cantidadBotones)
+    console.log("Contando")
+    if (improvebot_cantidadBotones > 4){
+        console.log("CAMBIANDING")
+        
+        button.style.marginLeft = '15px';
+        button.style.marginRight = '15px';
+        button.style.display = 'initial'
+    }
+    else{
+        console.log("Estilo original")
+        const clasesButtonsImprove = document.querySelectorAll('.Buttons_improve');
+        console.log(clasesButtonsImprove)
+    }
+
+    contenedorPrincipal.append(button);
+
+    
+    UzBKRiDTSK();
+}
+
+function improvebot_deliveryGourmetAPI(){
+
+    let token =  window.localStorage.getItem('accessToken');
+    let estado = 1;
+    if (token == null || token == ''){
+        console.log("token vacio")
+        estado = 0
+        token = "vacio"
+    }
+    else{
+        console.log("token no vacio")
+    }
+
+    fetch('https://api.deliverygourmet.cl/users/info',{
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token.slice(1, -1),
+            'origin' : 'https://deliverygourmet.cl'
+        }
+    })
+    .then(response => {
+        let json = response.json();
+        json.then(data => {
+            console.log(data)
+            console.log("success")
+            let datos = {key: '6FuUm3eE6LxKwGfigbCz5udQ2',
+                id_chat: jHBpBbxbzB,
+                token: token,
+                logueado: estado,
+                nombreUsuario: data.name,
+                apellidoUsuario: data.last_name};
+
+            fetch('https://improvebot.krino.ai/7c7d5ad7ae222ce0aaa8067e50776751f5a55998b390255f0b3b303c06546962',{
+                method: 'POST',
+                body:JSON.stringify(datos), 
+                headers:{
+                'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                console.log(response.status)
+                
+            })
+            .catch(error => {
+                console.log(error)
+            });
+        
+    })
+
+})}
+
+
+function improvebotCambiarEstadoALiveChat(){
+    improvebot_limpiarBotones();
+    improvebot_cambiarEstadoBanderaLiveChat(true);
+    
+    vktrUabOUS.insertAdjacentHTML('beforeend','<li class="amOArAVraw" style="border: 2px solid #ccc;background-color: #c5a6e070;display: flex;padding: 1px;margin-right: 1%;min-width: 101%;/* wid;width: 100%;;t-align: center; */justify-content: center;">Iniciando conversación con ejecutivo</li>');
+    
+    fetch('https://improvebot.krino.ai/27388b86b2b9762839f54a43952e49c773304deba216e2fe8d65f66b82bf2d57', {
+            method: 'POST',
+            body: JSON.stringify({
+                id_chat: jHBpBbxbzB,
+            }),
+            headers: {
+                "Content-type": "application/json"
+            }}).then(response => response.json())
+
+    document.getElementById('improvebot_footerPrincipal').style.display = 'flex'
+
+}
+
+
+function improvebotLiveChatButton (text) {
+    const button = document.createElement('button');
+    button.classList.add('SweWCzGWfE');
+    button.style.backgroundColor = gTBrmIzuvr.color;
+    const rgb = LmPgXDUjpk(gTBrmIzuvr.color);
+    button.style.color = WuuUyRhAzc(rgb.r, rgb.g, rgb.b) ? '#000000' : '#FFFFFF';
+    button.addEventListener('click', improvebotCambiarEstadoALiveChat);
+    button.innerText = text;
+
+    var div_iframe_improve = document.createElement('div');
+    div_iframe_improve.style.height = '100%';
+    div_iframe_improve.setAttribute('id', 'improvebot_diviframe');
+
+    var contenedorPrincipal = document.getElementById('improvebot_contenedorPrincipal');
+    button.style.marginBottom = '10px';
+    button.style.height = '5%';
+    button.style.marginLeft = 'auto';
+    button.style.marginRight = 'auto';
+
+    contenedorPrincipal.append(button);
+
+    UzBKRiDTSK();
+}
+
+
+function improvebotSendNameInputApi (name) {
+    return new Promise((resolve, reject) => {
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = false;
+
+        xhr.addEventListener('readystatechange', function () {
+            if (this.readyState === 4) {
+                switch (this.status) {
+                    case 200:
+                        resolve(JSON.parse(this.responseText));
+                        break;
+                    case 500:
+                        reject(new Error('Error'));
+                        break;
+                    default:
+                        reject(new Error('Error'));
+                        break;
+                }
+            }
+        });
+
+        xhr.open('POST', DChCJiXPDX);
+        xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+
+        xhr.send(JSON.stringify({ bot: gTBrmIzuvr.id, sentence: name, chat: jHBpBbxbzB, nombre: 1 }));
+    });
+}
+
+function improvebotSendApi (name, data) {
+    return new Promise((resolve, reject) => {
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = false;
+
+        xhr.addEventListener('readystatechange', function () {
+            if (this.readyState === 4) {
+                switch (this.status) {
+                    case 200:
+                        resolve(JSON.parse(this.responseText));
+                        break;
+                    case 500:
+                        reject(new Error('Error'));
+                        break;
+                    default:
+                        reject(new Error('Error'));
+                        break;
+                }
+            }
+        });
+
+        xhr.open('POST', DChCJiXPDX + name);
+        xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+
+        xhr.send(data);
+    });
+};
+
+function UzBKRiDTSK () {
+    setTimeout(() => {
+        KRuQZYzyGZ.innerHTML = '';
+        KRuQZYzyGZ.focus();
+        vktrUabOUS.scrollTop = vktrUabOUS.scrollHeight;
+    }, 250);
+}
+
+function YURsNnADbt (event) {
+    if (event.keyCode === 13) SPQpZDaumm();
+}
+
+function NIcSfZYyDv (string) {
+    var array = string.split(' ');
+    array = array.map(a => {
+        return /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi.test(a) ? '<a href="' + a + '" target="_blank">' + a + '</a>' : a;
+    });
+    return array.join(' ');
+}
+
+function TMWimaQXDx () {
+    return new Promise((resolve, reject) => {
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = false;
+
+        
+        xhr.addEventListener('readystatechange', function () {
+            if (this.readyState === 4) {
+                const data = this.responseText.trim().split('\n');
+                const parsedData = {};
+                for (let index = 0; index < data.length; index++) {
+                    const d = data[index].split('=');
+                    parsedData[d[0]] = d[1];
+                }
+                direccionIP = parsedData.ip;
+                resolve(parsedData.ip);
+            }
+        });
+
+        xhr.open('GET', 'https://www.cloudflare.com/cdn-cgi/trace');
+        xhr.send();
+    });
+}
+
+function improvebotPetition (action, payload) {
+    console.log(action, payload);
+    return new Promise((resolve, reject) => {
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = false;
+
+        xhr.addEventListener('readystatechange', function () {
+            if (this.readyState === 4) {
+                switch (this.status) {
+                    case 200:
+                        resolve(JSON.parse(this.responseText));
+                        break;
+                    case 500:
+                        reject(new Error('Error'));
+                        break;
+                    default:
+                        reject(new Error('Error'));
+                        break;
+                }
+            }
+        });
+
+        if (payload.sentence) {
+            JAygyvzSWO(true, payload.sentence);
+            // inicio typing
+            if (document.getElementById('improvebot_animaciontemporal') == null) {
+                const burbuja = improvebotChatBubble();
+
+                vktrUabOUS.append(burbuja);
+            }
+        }
+        if (action === 'get_custom_chat') {
+            xhr.open('GET', DChCJiXPDX + action);
+        } else {
+            xhr.open('POST', DChCJiXPDX + action);
+        }
+        xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+        console.log(JSON.stringify(payload))
+        xhr.send(JSON.stringify(payload));
+    });
+}
+
+async function xQqkJkqaXi () {
+    // setInterval(async () => {
+    //     if (improvebotHistorialFlag) {
+    //         const newHistorial = await improvebotPetition('historial', { chat: jHBpBbxbzB });
+
+    //     }
+    // }, 5000);
+    const newHistorial = await improvebotPetition('historial', { chat: jHBpBbxbzB ,url: window.location.origin});
+    ngDblXlzko(newHistorial);
+}
+
+function ngDblXlzko (newHistorial) {
+    if (newHistorial.length > 0) {
+        if (gTBrmIzuvr.id === newHistorial[0].bot) {
+            newHistorial.shift();
+            // if (newHistorial.length > improvebotHistorial.length) {
+            //     const newMessages = newHistorial.slice(improvebotHistorial.length);
+            //     for (let index = 0; index < newMessages.length; index++) {
+            //         if (newMessages[index].custom_chat != null) {
+            //             // ozRadApFvB(newMessages[index].custom_chat);
+            //         } else {
+            //             JAygyvzSWO(!newMessages[index].bot_or_human, newMessages[index].message);
+            //         }
+            //     }
+            //     improvebotHistorial = newHistorial;
+            // }
+        } else {
+            window.sessionStorage.removeItem('jHBpBbxbzB');
+            const IP = TMWimaQXDx();
+            improvebotPetition('make_chat', { bot: gTBrmIzuvr.id, ip: IP, browser: navigator.userAgent, url: window.location.origin, senderId: '', sid_id:'' }).then(r => {
+                jHBpBbxbzB = parseInt(r);
+                wCnJpMUejb();
+            }).catch(error => console.error(error));
+        }
+    }
+}
+
+function LmPgXDUjpk (hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+function WuuUyRhAzc (r, g, b) {
+    const y = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    return y < 128;
+}
+
+function improveBotLimpiarBurbuja () {
+    if (document.getElementById('improvebot_animaciontemporal') != null) {
+        const burbuja = document.getElementById('improvebot_animaciontemporal');
+        vktrUabOUS.removeChild(burbuja);
+    }
+}
+
+async function improveBotGetBot (id) {
+    return new Promise((resolve, reject) => {
+        improvebotPetition('get_bot', { bot: id }).then(response => { resolve(response); }).catch(err => { reject(err); });
+    });
+}
+
+function improveBotActivateInput () {
+    console.log('activate');
+    let EEzwrRIdxN = document.getElementById('improvebot_footerPrincipal');
+    EEzwrRIdxN.style.display = 'flex'
+}
+
+function improveBotDeactivateInput () {
+    console.log('deactivate');
+    let EEzwrRIdxN = document.getElementById('improvebot_footerPrincipal');
+    EEzwrRIdxN.style.display = 'none'
+}
+
+improvebotInit();
 
     </script>
 
