@@ -158,18 +158,10 @@ async function layRMXrLNe () {
 
         let data = { bot: gTBrmIzuvr.id, chat: parseInt(jHBpBbxbzB),url: window.location.origin }
         console.log(data)
-        let response = await fetch(DChCJiXPDX + 'get_custom_chat', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
-        let respuestaObjeto = await response.json();
-        console.log(respuestaObjeto)
-        console.log(Object.keys(respuestaObjeto).length)
-        console.log(respuestaObjeto.elementos)
-        if (Object.keys(respuestaObjeto).length > 0) {
+
+        improvebotPetition('get_custom_chat', JSON.stringify(data)).then(elementofaq => {
+            
+            if (Object.keys(elementofaq).length > 0) {
             
                 var elementoDesactivar = 0
                 var counterImproveLabel = 0;
@@ -179,15 +171,15 @@ async function layRMXrLNe () {
                 var contenedorPrincipal = document.getElementById('improve_buttons');
                 contenedorPrincipal.innerHTML = ''
 
-                for (let indice in respuestaObjeto.elementos) {
-                    if (Object.keys(respuestaObjeto.elementos[indice]).length > 0) {
+                for (let indice in elementofaq.elementos) {
+                    if (Object.keys(elementofaq.elementos[indice]).length > 0) {
                         if (indice == 'btnFaq'){
                             improvebot_cantidadBotones ++
                             var contenedorPrincipal = document.getElementById('improve_buttons');
                             contenedorPrincipal.innerHTML = ''
                             console.log("Entre a btnFaq")
-                            console.log(respuestaObjeto.elementos[indice])
-                            ozRadApFvB(respuestaObjeto.elementos[indice],indice);
+                            console.log(elementofaq.elementos[indice])
+                            ozRadApFvB(elementofaq.elementos[indice],indice);
                         }
                         else{
                             if (document.getElementById("improvebot_animaciontemporal")) {
@@ -198,14 +190,14 @@ async function layRMXrLNe () {
                             }
                             setTimeout(function(){
                                 if (document.getElementById("improvebot_animaciontemporal")) {
-                                    ozRadApFvB(respuestaObjeto.elementos[indice],indice);
+                                    ozRadApFvB(elementofaq.elementos[indice],indice);
                                     improveBotLimpiarBurbuja();
                                 }
                                 else{
                                     let burbuja = improvebotChatBubble();
                                     vktrUabOUS.append(burbuja);
                                     setTimeout(function(){
-                                        ozRadApFvB(respuestaObjeto.elementos[indice],indice);
+                                        ozRadApFvB(elementofaq.elementos[indice],indice);
                                         improveBotLimpiarBurbuja();
                                     },500)
                                 }
@@ -227,6 +219,11 @@ async function layRMXrLNe () {
                 
             }
             
+        }).catch(e => { console.error(e); });
+
+        
+        
+            
         
     }
     else{
@@ -235,7 +232,6 @@ async function layRMXrLNe () {
         } )
     }
 }
-
 // String.prototype.replaceAt=function(index, char) {
 //     var a = this.split("");
 //     a[index] = char;
